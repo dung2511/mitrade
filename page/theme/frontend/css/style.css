@@ -1308,6 +1308,10 @@ video {
     margin-top: 4rem;
   }
 
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .sm\:block {
     display: block;
   }
