@@ -26,6 +26,11 @@ var PROGRAM = (function () {
       slidesPerView: 1,
       pagination : {
         el:".pagination-achievements"
+      },
+      loop:true,
+      autoplay: {
+        delay: 2000,
+        
       }
     })
   }
