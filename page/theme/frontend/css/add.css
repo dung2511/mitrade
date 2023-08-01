@@ -91,3 +91,8 @@
 .sl-achievements_mains .item-achievements img {
   margin: auto;
 }
+@media (max-width: 640px) {
+  .section-service .items-service {
+    margin-bottom: 10px;
+  }
+}
