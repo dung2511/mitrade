@@ -127,10 +127,13 @@ body {
 }
 .answer {
   display: none;
-  transition: all 0.5s;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  height: 0;
 }
 .answer.active {
   display: block;
+  transition: height 0.3s ease;
 }
 .question i {
   transition: all 0.3s;
