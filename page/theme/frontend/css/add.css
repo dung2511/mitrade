@@ -52,18 +52,10 @@
 }
 .nav-language-desktop li {
   padding: 0.5rem 1rem;
-  border-bottom: 1px solid #ebebeb;
   transition: all 0.3s;
 }
 .nav-language-desktop li:hover {
-  background-color: #e0e0e0;
-}
-.nav-language-desktop {
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
-}
-.header-language:hover .nav-language-desktop {
-  display: block;
-  transition: all 0.3s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .nav-language-mobile ul li {
   padding: 0 40px;
@@ -107,33 +99,55 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: "Source Han Sans TW";
-  src: url(../fonts/SourceHanSansTW-Bold.otf);
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Bold.ttf);
   font-weight: 700;
 }
-@font-face {
-  font-family: "Source Han Sans TW";
-  src: url(../fonts/SourceHanSansTW-Medium.otf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Source Han Sans TW";
-  src: url(../fonts/SourceHanSansTW-Regular.otf);
-  font-weight: 400;
-}
-.section-news .item-news .s-title,
-.section-news .title h2,
-.section-feedback .title h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
-.section-news .item-news .s-content,
-.section-news .title p,
-.section-feedback .title p,
-.section-feedback .list-items-feedback {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-}
 body {
-  font-family: "Source Han Sans TW";
+  font-family: "Roboto", sans-serif;
+}
+.section-service .items-service {
+  border-radius: 4px;
+  border: 1px solid #ebebeb;
+}
+.why-choose .items-why {
+  transition: all 0.3s;
+}
+.why-choose .items-why:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.section-service .items-service .btn-buynow {
+  transition: all 0.3s;
+}
+.section-service .items-service .btn-buynow:hover {
+  box-shadow: #ff8692 0px 4px 4px 0px;
+}
+.section-question .item-question {
+  transition: all 0.3s;
+}
+.answer {
+  display: none;
+  transition: all 0.5s;
+}
+.answer.active {
+  display: block;
+}
+.question i {
+  transition: all 0.3s;
+}
+.question i.active {
+  transform: rotate(90deg);
+}
+.section-comment .interact .reply_comment .box_comment {
+  display: block;
+  position: relative;
+  line-height: 1.358;
+  word-break: break-word;
+  border: 1px solid #d3d6db;
+  word-wrap: break-word;
+  background: #fff;
+  box-sizing: border-box;
+  cursor: text;
+  font-size: 14px;
+  padding: 0;
 }

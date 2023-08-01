@@ -104,22 +104,12 @@
             </svg>
           </div>
           <div
-            class="flex justify-end md:justify-center md:gap-10 items-center align-middle w-1/2 whitespace-nowrap"
+            class="flex justify-end md:gap-10 items-center align-middle w-1/2 whitespace-nowrap"
           >
             <div
               class="hidden md:block cursor-pointer relative header-language"
             >
-              <div class="wrap-language flex items-center">
-                <img
-                  class="w-5 h-5 float-left mr-2.5"
-                  src="theme/frontend/images/lang-m.png"
-                  alt=""
-                />
-                <span>Tiếng Việt</span>
-              </div>
-              <ul
-                class="nav hidden bg-white w-full absolute nav-language-desktop"
-              >
+              <ul class="nav w-full flex nav-language-desktop">
                 <li>
                   <a href="#">繁體中文</a>
                 </li>
@@ -127,7 +117,7 @@
                 <li><a href="#">Tiếng Việt</a></li>
               </ul>
             </div>
-            <div class="mr-5">
+            <div class="mr-5 md:mr-0">
               <a
                 href="#"
                 class="h-10 block px-5 text-center bg-[#3682FF] border border-solid border-[#196ffc] text-[#ffffff] leading-10 rounded"
@@ -168,10 +158,10 @@
         </div>
       </div>
     </header>
-    <section class="section1">
-      <div
-        class="container 2xl:pl-32 mx-auto bg-[url('../images/bg-banner.jpg')] bg-no-repeat bg-[length:100%_100%] mt-[70px] md:h-auto"
-      >
+    <section
+      class="section1 bg-[url('../images/bg-banner.jpg')] bg-no-repeat bg-[length:100%_100%]"
+    >
+      <div class="container 2xl:pl-32 mx-auto mt-[70px] md:h-auto">
         <div
           class="wrap pt-16 lg:pt-0 overflow-hidden block lg:flex items-center h-auto px-4 mx-auto my-0 relative"
         >
@@ -184,8 +174,10 @@
               class="hidden lg:block"
               width="70"
             />
-            <h1 class="mb-7 md:mb-9">
-              <span class="text-[28px] font-bold text-[#ffffff] md:text-[40px]">
+            <h1 class="mb-3 md:mb-9">
+              <span
+                class="text-[24px] md:text-[28px] font-bold text-[#ffffff] lg:text-[40px]"
+              >
                 Tại sao Mitrade là lựa chọn ưu tiên để giao dịch?
               </span>
             </h1>
@@ -202,7 +194,7 @@
               </span>
             </p>
             <a
-              class="inline-block text-[18px] text-[#fff] align-top cursor-pointer overflow-hidden whitespace-nowrap h-[60px] leading-[60px] px-6 m-0 bg-[#3682FF] rounded md:h-[60px] md:leading-[60px] md:px-10 md:text-[28px]"
+              class="inline-block text-[18px] text-[#fff] align-top cursor-pointer whitespace-nowrap h-[48px] leading-[48px] lg:h-[60px] lg:leading-[60px] px-6 m-0 bg-[#3682FF] rounded md:h-[60px] md:leading-[60px] md:px-10 md:text-[28px]"
               href="#"
               >Tải xuống ứng dụng</a
             >
@@ -219,9 +211,9 @@
       <div class="container mx-auto px-2.5 2xl:px-32">
         <div class="list-items-service gap-2.5 justify-between flex flex-wrap">
           <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+            class="items-service pt-2.5 pb-10 flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
           >
-            <h2 class="title text-[#FDBB40] font-semibold">
+            <h2 class="title text-[#FDBB40] font-semibold mb-2.5">
               <a href="#"><span>Tên gói dịch vụ</span></a>
             </h2>
             <a
@@ -230,7 +222,7 @@
             >
               <img src="theme/frontend/images/thantai.png" alt="" />
             </a>
-            <div class="info-service mt-1">
+            <div class="info-service mt-2.5">
               <div class="item-rating text-[#FABF57]">
                 <p class="rating">
                   <span class="rating-box">
@@ -244,16 +236,18 @@
               </div>
               <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
               <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] rounded btn-buynow"
               >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+                <a class="uppercase text-white inline-block p-1.5" href="#"
+                  >mua cầu ngay</a
+                >
               </div>
             </div>
           </div>
           <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+            class="items-service pt-2.5 pb-10 flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
           >
-            <h2 class="title text-[#FDBB40] font-semibold">
+            <h2 class="title text-[#FDBB40] font-semibold mb-2.5">
               <a href="#"><span>Tên gói dịch vụ</span></a>
             </h2>
             <a
@@ -262,7 +256,7 @@
             >
               <img src="theme/frontend/images/thantai.png" alt="" />
             </a>
-            <div class="info-service mt-1">
+            <div class="info-service mt-2.5">
               <div class="item-rating text-[#FABF57]">
                 <p class="rating">
                   <span class="rating-box">
@@ -276,16 +270,18 @@
               </div>
               <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
               <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] rounded btn-buynow"
               >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+                <a class="uppercase text-white inline-block p-1.5" href="#"
+                  >mua cầu ngay</a
+                >
               </div>
             </div>
           </div>
           <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+            class="items-service pt-2.5 pb-10 flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
           >
-            <h2 class="title text-[#FDBB40] font-semibold">
+            <h2 class="title text-[#FDBB40] font-semibold mb-2.5">
               <a href="#"><span>Tên gói dịch vụ</span></a>
             </h2>
             <a
@@ -294,7 +290,7 @@
             >
               <img src="theme/frontend/images/thantai.png" alt="" />
             </a>
-            <div class="info-service mt-1">
+            <div class="info-service mt-2.5">
               <div class="item-rating text-[#FABF57]">
                 <p class="rating">
                   <span class="rating-box">
@@ -308,16 +304,18 @@
               </div>
               <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
               <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] rounded btn-buynow"
               >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+                <a class="uppercase text-white inline-block p-1.5" href="#"
+                  >mua cầu ngay</a
+                >
               </div>
             </div>
           </div>
           <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+            class="items-service pt-2.5 pb-10 flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
           >
-            <h2 class="title text-[#FDBB40] font-semibold">
+            <h2 class="title text-[#FDBB40] font-semibold mb-2.5">
               <a href="#"><span>Tên gói dịch vụ</span></a>
             </h2>
             <a
@@ -326,7 +324,7 @@
             >
               <img src="theme/frontend/images/thantai.png" alt="" />
             </a>
-            <div class="info-service mt-1">
+            <div class="info-service mt-2.5">
               <div class="item-rating text-[#FABF57]">
                 <p class="rating">
                   <span class="rating-box">
@@ -340,393 +338,11 @@
               </div>
               <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
               <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] rounded btn-buynow"
               >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
-          >
-            <h2 class="title text-[#FDBB40] font-semibold">
-              <a href="#"><span>Tên gói dịch vụ</span></a>
-            </h2>
-            <a
-              href="#"
-              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
-            >
-              <img src="theme/frontend/images/thantai.png" alt="" />
-            </a>
-            <div class="info-service mt-1">
-              <div class="item-rating text-[#FABF57]">
-                <p class="rating">
-                  <span class="rating-box">
-                    <i class="star fa fa-star" data-score="1"></i>
-                    <i class="star fa fa-star" data-score="2"></i>
-                    <i class="star fa fa-star" data-score="3"></i>
-                    <i class="star fa fa-star" data-score="4"></i>
-                    <i class="star fa fa-star" data-score="5"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
-              <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
-              >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
-          >
-            <h2 class="title text-[#FDBB40] font-semibold">
-              <a href="#"><span>Tên gói dịch vụ</span></a>
-            </h2>
-            <a
-              href="#"
-              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
-            >
-              <img src="theme/frontend/images/thantai.png" alt="" />
-            </a>
-            <div class="info-service mt-1">
-              <div class="item-rating text-[#FABF57]">
-                <p class="rating">
-                  <span class="rating-box">
-                    <i class="star fa fa-star" data-score="1"></i>
-                    <i class="star fa fa-star" data-score="2"></i>
-                    <i class="star fa fa-star" data-score="3"></i>
-                    <i class="star fa fa-star" data-score="4"></i>
-                    <i class="star fa fa-star" data-score="5"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
-              <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
-              >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
-          >
-            <h2 class="title text-[#FDBB40] font-semibold">
-              <a href="#"><span>Tên gói dịch vụ</span></a>
-            </h2>
-            <a
-              href="#"
-              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
-            >
-              <img src="theme/frontend/images/thantai.png" alt="" />
-            </a>
-            <div class="info-service mt-1">
-              <div class="item-rating text-[#FABF57]">
-                <p class="rating">
-                  <span class="rating-box">
-                    <i class="star fa fa-star" data-score="1"></i>
-                    <i class="star fa fa-star" data-score="2"></i>
-                    <i class="star fa fa-star" data-score="3"></i>
-                    <i class="star fa fa-star" data-score="4"></i>
-                    <i class="star fa fa-star" data-score="5"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
-              <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
-              >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
-          >
-            <h2 class="title text-[#FDBB40] font-semibold">
-              <a href="#"><span>Tên gói dịch vụ</span></a>
-            </h2>
-            <a
-              href="#"
-              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
-            >
-              <img src="theme/frontend/images/thantai.png" alt="" />
-            </a>
-            <div class="info-service mt-1">
-              <div class="item-rating text-[#FABF57]">
-                <p class="rating">
-                  <span class="rating-box">
-                    <i class="star fa fa-star" data-score="1"></i>
-                    <i class="star fa fa-star" data-score="2"></i>
-                    <i class="star fa fa-star" data-score="3"></i>
-                    <i class="star fa fa-star" data-score="4"></i>
-                    <i class="star fa fa-star" data-score="5"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
-              <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
-              >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
-          >
-            <h2 class="title text-[#FDBB40] font-semibold">
-              <a href="#"><span>Tên gói dịch vụ</span></a>
-            </h2>
-            <a
-              href="#"
-              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
-            >
-              <img src="theme/frontend/images/thantai.png" alt="" />
-            </a>
-            <div class="info-service mt-1">
-              <div class="item-rating text-[#FABF57]">
-                <p class="rating">
-                  <span class="rating-box">
-                    <i class="star fa fa-star" data-score="1"></i>
-                    <i class="star fa fa-star" data-score="2"></i>
-                    <i class="star fa fa-star" data-score="3"></i>
-                    <i class="star fa fa-star" data-score="4"></i>
-                    <i class="star fa fa-star" data-score="5"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
-              <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
-              >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
-          >
-            <h2 class="title text-[#FDBB40] font-semibold">
-              <a href="#"><span>Tên gói dịch vụ</span></a>
-            </h2>
-            <a
-              href="#"
-              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
-            >
-              <img src="theme/frontend/images/thantai.png" alt="" />
-            </a>
-            <div class="info-service mt-1">
-              <div class="item-rating text-[#FABF57]">
-                <p class="rating">
-                  <span class="rating-box">
-                    <i class="star fa fa-star" data-score="1"></i>
-                    <i class="star fa fa-star" data-score="2"></i>
-                    <i class="star fa fa-star" data-score="3"></i>
-                    <i class="star fa fa-star" data-score="4"></i>
-                    <i class="star fa fa-star" data-score="5"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
-              <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
-              >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
-          >
-            <h2 class="title text-[#FDBB40] font-semibold">
-              <a href="#"><span>Tên gói dịch vụ</span></a>
-            </h2>
-            <a
-              href="#"
-              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
-            >
-              <img src="theme/frontend/images/thantai.png" alt="" />
-            </a>
-            <div class="info-service mt-1">
-              <div class="item-rating text-[#FABF57]">
-                <p class="rating">
-                  <span class="rating-box">
-                    <i class="star fa fa-star" data-score="1"></i>
-                    <i class="star fa fa-star" data-score="2"></i>
-                    <i class="star fa fa-star" data-score="3"></i>
-                    <i class="star fa fa-star" data-score="4"></i>
-                    <i class="star fa fa-star" data-score="5"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
-              <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
-              >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
-          >
-            <h2 class="title text-[#FDBB40] font-semibold">
-              <a href="#"><span>Tên gói dịch vụ</span></a>
-            </h2>
-            <a
-              href="#"
-              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
-            >
-              <img src="theme/frontend/images/thantai.png" alt="" />
-            </a>
-            <div class="info-service mt-1">
-              <div class="item-rating text-[#FABF57]">
-                <p class="rating">
-                  <span class="rating-box">
-                    <i class="star fa fa-star" data-score="1"></i>
-                    <i class="star fa fa-star" data-score="2"></i>
-                    <i class="star fa fa-star" data-score="3"></i>
-                    <i class="star fa fa-star" data-score="4"></i>
-                    <i class="star fa fa-star" data-score="5"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
-              <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
-              >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
-          >
-            <h2 class="title text-[#FDBB40] font-semibold">
-              <a href="#"><span>Tên gói dịch vụ</span></a>
-            </h2>
-            <a
-              href="#"
-              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
-            >
-              <img src="theme/frontend/images/thantai.png" alt="" />
-            </a>
-            <div class="info-service mt-1">
-              <div class="item-rating text-[#FABF57]">
-                <p class="rating">
-                  <span class="rating-box">
-                    <i class="star fa fa-star" data-score="1"></i>
-                    <i class="star fa fa-star" data-score="2"></i>
-                    <i class="star fa fa-star" data-score="3"></i>
-                    <i class="star fa fa-star" data-score="4"></i>
-                    <i class="star fa fa-star" data-score="5"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
-              <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
-              >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
-          >
-            <h2 class="title text-[#FDBB40] font-semibold">
-              <a href="#"><span>Tên gói dịch vụ</span></a>
-            </h2>
-            <a
-              href="#"
-              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
-            >
-              <img src="theme/frontend/images/thantai.png" alt="" />
-            </a>
-            <div class="info-service mt-1">
-              <div class="item-rating text-[#FABF57]">
-                <p class="rating">
-                  <span class="rating-box">
-                    <i class="star fa fa-star" data-score="1"></i>
-                    <i class="star fa fa-star" data-score="2"></i>
-                    <i class="star fa fa-star" data-score="3"></i>
-                    <i class="star fa fa-star" data-score="4"></i>
-                    <i class="star fa fa-star" data-score="5"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
-              <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
-              >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
-          >
-            <h2 class="title text-[#FDBB40] font-semibold">
-              <a href="#"><span>Tên gói dịch vụ</span></a>
-            </h2>
-            <a
-              href="#"
-              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
-            >
-              <img src="theme/frontend/images/thantai.png" alt="" />
-            </a>
-            <div class="info-service mt-1">
-              <div class="item-rating text-[#FABF57]">
-                <p class="rating">
-                  <span class="rating-box">
-                    <i class="star fa fa-star" data-score="1"></i>
-                    <i class="star fa fa-star" data-score="2"></i>
-                    <i class="star fa fa-star" data-score="3"></i>
-                    <i class="star fa fa-star" data-score="4"></i>
-                    <i class="star fa fa-star" data-score="5"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
-              <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
-              >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
-          >
-            <h2 class="title text-[#FDBB40] font-semibold">
-              <a href="#"><span>Tên gói dịch vụ</span></a>
-            </h2>
-            <a
-              href="#"
-              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
-            >
-              <img src="theme/frontend/images/thantai.png" alt="" />
-            </a>
-            <div class="info-service mt-1">
-              <div class="item-rating text-[#FABF57]">
-                <p class="rating">
-                  <span class="rating-box">
-                    <i class="star fa fa-star" data-score="1"></i>
-                    <i class="star fa fa-star" data-score="2"></i>
-                    <i class="star fa fa-star" data-score="3"></i>
-                    <i class="star fa fa-star" data-score="4"></i>
-                    <i class="star fa fa-star" data-score="5"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
-              <div
-                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
-              >
-                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+                <a class="uppercase text-white inline-block p-1.5" href="#"
+                  >mua cầu ngay</a
+                >
               </div>
             </div>
           </div>
@@ -752,7 +368,7 @@
               <img src="theme/frontend/images/item-why.png" alt="" />
             </div>
             <p
-              class="title-items-why text-[#44505C] mt-2 font-semibold md:text-[20px] lg:text-[24px]"
+              class="title-items-why text-[#44505C] mt-2 font-medium md:text-[18px] lg:text-[24px]"
             >
               Hơn 2,100 sản phẩm
             </p>
@@ -764,7 +380,7 @@
               <img src="theme/frontend/images/item-why.png" alt="" />
             </div>
             <p
-              class="title-items-why text-[#44505C] mt-2 font-semibold md:text-[20px] lg:text-[24px]"
+              class="title-items-why text-[#44505C] mt-2 font-medium md:text-[18px] lg:text-[24px]"
             >
               Đào tạo toàn diện
             </p>
@@ -776,7 +392,7 @@
               <img src="theme/frontend/images/item-why.png" alt="" />
             </div>
             <p
-              class="title-items-why text-[#44505C] mt-2 font-semibold md:text-[20px] lg:text-[24px]"
+              class="title-items-why text-[#44505C] mt-2 font-medium md:text-[18px] lg:text-[24px]"
             >
               An toàn và bảo mật
             </p>
@@ -788,7 +404,7 @@
               <img src="theme/frontend/images/item-why.png" alt="" />
             </div>
             <p
-              class="title-items-why text-[#44505C] mt-2 font-semibold md:text-[20px] lg:text-[24px]"
+              class="title-items-why text-[#44505C] mt-2 font-medium md:text-[18px] lg:text-[24px]"
             >
               Nền tảng đột phá
             </p>
@@ -800,7 +416,7 @@
               <img src="theme/frontend/images/item-why.png" alt="" />
             </div>
             <p
-              class="title-items-why text-[#44505C] mt-2 font-semibold md:text-[20px] lg:text-[24px]"
+              class="title-items-why text-[#44505C] mt-2 font-medium md:text-[18px] lg:text-[24px]"
             >
               Thương hiệu được niêm yết
             </p>
@@ -812,7 +428,7 @@
               <img src="theme/frontend/images/item-why.png" alt="" />
             </div>
             <p
-              class="title-items-why text-[#44505C] mt-2 font-semibold md:text-[20px] lg:text-[24px]"
+              class="title-items-why text-[#44505C] mt-2 font-medium md:text-[18px] lg:text-[24px]"
             >
               Hỗ trợ khách hàng 24/7
             </p>
@@ -833,14 +449,12 @@
             <div
               class="question flex justify-between items-center cursor-pointer border-b border-solid border-[#ebebeb] pb-1.5"
             >
-              <p class="text-[18px] lg:text-[20px] font-semibold">
-                XTB là gì ?
-              </p>
+              <p class="text-[18px] lg:text-[20px] font-medium">XTB là gì ?</p>
               <span class="text-[18px] lg:text-[20px]">
-                <i class="fa-solid fa-angle-down"></i>
+                <i class="fa-solid fa-angle-right"></i>
               </span>
             </div>
-            <div class="answer hidden">
+            <div class="answer">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
               natus, impedit, modi iure consectetur, accusamus dicta sit
               architecto ullam dignissimos ut cupiditate voluptatibus magni quos
@@ -851,14 +465,14 @@
             <div
               class="question flex justify-between items-center cursor-pointer border-b border-solid border-[#ebebeb] pb-1.5"
             >
-              <p class="text-[18px] lg:text-[20px] font-semibold">
+              <p class="text-[18px] lg:text-[20px] font-medium">
                 XTB hỗ trợ giao dịch trên nền tảng nào ?
               </p>
               <span class="text-[18px] lg:text-[20px]">
-                <i class="fa-solid fa-angle-down"></i>
+                <i class="fa-solid fa-angle-right"></i>
               </span>
             </div>
-            <div class="answer hidden">
+            <div class="answer">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
               natus, impedit, modi iure consectetur, accusamus dicta sit
               architecto ullam dignissimos ut cupiditate voluptatibus magni quos
@@ -869,14 +483,14 @@
             <div
               class="question flex justify-between items-center cursor-pointer border-b border-solid border-[#ebebeb] pb-1.5"
             >
-              <p class="text-[18px] lg:text-[20px] font-semibold">
+              <p class="text-[18px] lg:text-[20px] font-medium">
                 XTB hỗ trợ thanh toán bằng phương thức nào ?
               </p>
               <span class="text-[18px] lg:text-[20px]">
-                <i class="fa-solid fa-angle-down"></i>
+                <i class="fa-solid fa-angle-right"></i>
               </span>
             </div>
-            <div class="answer hidden">
+            <div class="answer">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
               natus, impedit, modi iure consectetur, accusamus dicta sit
               architecto ullam dignissimos ut cupiditate voluptatibus magni quos
@@ -887,14 +501,14 @@
             <div
               class="question flex justify-between items-center cursor-pointer border-b border-solid border-[#ebebeb] pb-1.5"
             >
-              <p class="text-[18px] lg:text-[20px] font-semibold">
+              <p class="text-[18px] lg:text-[20px] font-medium">
                 XTB có mấy loại tài khoản ?
               </p>
               <span class="text-[18px] lg:text-[20px]">
-                <i class="fa-solid fa-angle-down"></i>
+                <i class="fa-solid fa-angle-right"></i>
               </span>
             </div>
-            <div class="answer hidden">
+            <div class="answer">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
               natus, impedit, modi iure consectetur, accusamus dicta sit
               architecto ullam dignissimos ut cupiditate voluptatibus magni quos
@@ -905,14 +519,14 @@
             <div
               class="question flex justify-between items-center cursor-pointer border-b border-solid border-[#ebebeb] pb-1.5"
             >
-              <p class="text-[18px] lg:text-[20px] font-semibold">
+              <p class="text-[18px] lg:text-[20px] font-medium">
                 Nếu tôi cần hỗ trợ, XTB sẽ hỗ trợ như nào ?
               </p>
               <span class="text-[18px] lg:text-[20px]">
-                <i class="fa-solid fa-angle-down"></i>
+                <i class="fa-solid fa-angle-right"></i>
               </span>
             </div>
-            <div class="answer hidden">
+            <div class="answer">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
               natus, impedit, modi iure consectetur, accusamus dicta sit
               architecto ullam dignissimos ut cupiditate voluptatibus magni quos
@@ -925,7 +539,7 @@
     <section
       class="section-trust mt-10 bg-[url('../images/section4-bg.png')] bg-no-repeat bg-cover bg-center"
     >
-      <div class="container 2xl:px-32 mx-auto py-32 px-2.5">
+      <div class="container 2xl:px-32 mx-auto py-12 md:py-16 lg:py-20 px-2.5">
         <div class="flex justify-between flex-wrap">
           <div
             class="intro-trust lg:pl-16 text-white flex-[0_0_100%] max-w-full md:flex-[0_0_48%] md:max-w-[50%]"
@@ -945,7 +559,9 @@
               trách nhiệm đối với mỗi khách hàng.
             </p>
             <div class="flex justify-center md:inline-block">
-              <a class="p-4 rounded bg-[#3E84FD]" href="#"
+              <a
+                class="p-4 rounded bg-[#3E84FD] ease-in-out duration-300 hover:bg-[#2157b5]"
+                href="#"
                 >Trải nghiệm nền tảng của chúng tôi</a
               >
             </div>
@@ -954,14 +570,14 @@
             class="list-trust mt-14 md:mt-0 text-white flex-[0_0_100%] max-w-full md:flex-[0_0_48%] md:max-w-[50%]"
           >
             <ul>
-              <li class="flex items-start mb-8">
-                <span class="text-[#3E84FD] text-[20px] mr-2"
+              <li class="flex items-start mb-3 md:mb-4 lg:mb-8 gap-0 md:gap-2">
+                <span class="text-[#3E84FD] text-[18px] mr-2 md:mr-0"
                   ><i class="fa-solid fa-check"></i
                 ></span>
                 <p>Nền tảng độc quyền với các chức năng nâng cao</p>
               </li>
-              <li class="flex items-start mb-8">
-                <span class="text-[#3E84FD] text-[20px] mr-2"
+              <li class="flex items-start mb-3 md:mb-4 lg:mb-8 gap-0 md:gap-2">
+                <span class="text-[#3E84FD] text-[18px] mr-2 md:mr-0"
                   ><i class="fa-solid fa-check"></i
                 ></span>
                 <p>
@@ -969,8 +585,8 @@
                   khi được yêu cầu theo luật pháp Úc
                 </p>
               </li>
-              <li class="flex items-start mb-8">
-                <span class="text-[#3E84FD] text-[20px] mr-2"
+              <li class="flex items-start mb-3 md:mb-4 lg:mb-8 gap-0 md:gap-2">
+                <span class="text-[#3E84FD] text-[18px] mr-2 md:mr-0"
                   ><i class="fa-solid fa-check"></i
                 ></span>
                 <p>
@@ -978,8 +594,8 @@
                   bạn không bị mất nhiều hơn số tiền gửi của bạn.
                 </p>
               </li>
-              <li class="flex items-start mb-8">
-                <span class="text-[#3E84FD] text-[20px] mr-2"
+              <li class="flex items-start mb-3 md:mb-4 lg:mb-8 gap-0 md:gap-2">
+                <span class="text-[#3E84FD] text-[18px] mr-2 md:mr-0"
                   ><i class="fa-solid fa-check"></i
                 ></span>
                 <p>
@@ -998,7 +614,9 @@
           <div
             class="title-risk lg:pl-16 flex-[0_0_100%] max-w-full md:flex-[0_0_48%] md:max-w-[50%]"
           >
-            <h2 class="text-[#3E84FD] text-[24px] lg:text-[28px] mb-6 relative">
+            <h2
+              class="text-[#3E84FD] text-[24px] lg:text-[28px] mb-6 relative cursor-pointer"
+            >
               <span
                 class="lg:before:content-[''] lg:before:absolute lg:before:w-[60px] lg:before:h-[2px] lg:before:top-5 lg:before:-left-16 lg:before:bg-[#3E84FD]"
                 >Quản lý rủi ro của bạn một cách hiệu quả</span
@@ -1021,9 +639,11 @@
     <section
       class="section-achievements bg-[url('../images/bg-archievements.png')] bg-no-repeat bg-cover bg-center"
     >
-      <div class="container mx-auto px-2.5 py-24 2xl:px-32">
+      <div class="container mx-auto px-2.5 py-12 md:py-16 lg:py-20 2xl:px-32">
         <div class="title-achievements text-center">
-          <h2 class="text-[36px] font-bold text-white">
+          <h2
+            class="text-[24px] md:text-[30px] lg:text-[36px] font-medium lg:font-bold text-white"
+          >
             <span>Các thành tựu của chúng tôi</span>
           </h2>
         </div>
@@ -1075,7 +695,9 @@
     <section class="section-feedback mt-10">
       <div class="container mx-auto px-2.5 2xl:px-32">
         <div class="title text-center pb-8">
-          <h2 class="uppercase text-[36px] text-[#555]">
+          <h2
+            class="uppercase text-[20px] md:text-[24px] lg:text-[36px] text-[#555]"
+          >
             <span>Ý kiến khách hàng</span>
           </h2>
           <p>
@@ -1085,9 +707,11 @@
             >
           </p>
         </div>
-        <div class="list-items-feedback flex justify-around flex-wrap sm:gap-0">
+        <div
+          class="list-items-feedback flex justify-between lg:justify-around flex-wrap sm:gap-0"
+        >
           <div
-            class="item-feedback mb-5 sm:mb-0 flex-[0_0_100%] max-w-full sm:flex-[0_0_30%] sm:max-w-[30%] shadow-[0_1px_3px_-2px_rgbg(0_0_0_0.12)]"
+            class="item-feedback mb-5 sm:mb-0 flex-[0_0_48%] max-w-[50%] sm:flex-[0_0_30%] sm:max-w-[30%] shadow-[0_1px_3px_-2px_rgbg(0_0_0_0.12)]"
           >
             <div class="item px-2.5 pt-2.5 pb-8">
               <div class="w-32 mx-auto mb-4">
@@ -1109,7 +733,9 @@
                     </span>
                   </p>
                 </div>
-                <div class="s-content text-center text-xs text-[#777777]">
+                <div
+                  class="s-content text-center text-xs text-[#777777] italic mt-1.5"
+                >
                   <p>
                     Tôi thấy hài lòng với chất lượng dịch vụ của công ty, đáp
                     ứng được khoản vay lớn và lãi suất cũng hợp lý.
@@ -1123,7 +749,7 @@
             </div>
           </div>
           <div
-            class="item-feedback mb-5 sm:mb-0 flex-[0_0_100%] max-w-full sm:flex-[0_0_30%] sm:max-w-[30%] shadow-[0_1px_3px_-2px_rgbg(0_0_0_0.12)]"
+            class="item-feedback mb-5 sm:mb-0 flex-[0_0_48%] max-w-[50%] sm:flex-[0_0_30%] sm:max-w-[30%] shadow-[0_1px_3px_-2px_rgbg(0_0_0_0.12)]"
           >
             <div class="item px-2.5 pt-2.5 pb-8">
               <div class="w-32 mx-auto mb-4">
@@ -1145,7 +771,9 @@
                     </span>
                   </p>
                 </div>
-                <div class="s-content text-center text-xs text-[#777777]">
+                <div
+                  class="s-content text-center text-xs text-[#777777] italic mt-1.5"
+                >
                   <p>
                     Tôi thấy hài lòng với chất lượng dịch vụ của công ty, đáp
                     ứng được khoản vay lớn và lãi suất cũng hợp lý.
@@ -1159,7 +787,7 @@
             </div>
           </div>
           <div
-            class="item-feedback mb-5 sm:mb-0 flex-[0_0_100%] max-w-full sm:flex-[0_0_30%] sm:max-w-[30%] shadow-[0_1px_3px_-2px_rgbg(0_0_0_0.12)]"
+            class="item-feedback mb-5 sm:mb-0 flex-[0_0_48%] max-w-[50%] sm:flex-[0_0_30%] sm:max-w-[30%] shadow-[0_1px_3px_-2px_rgbg(0_0_0_0.12)]"
           >
             <div class="item px-2.5 pt-2.5 pb-8">
               <div class="w-32 mx-auto mb-4">
@@ -1181,7 +809,9 @@
                     </span>
                   </p>
                 </div>
-                <div class="s-content text-center text-xs text-[#777777]">
+                <div
+                  class="s-content text-center text-xs text-[#777777] italic mt-1.5"
+                >
                   <p>
                     Tôi thấy hài lòng với chất lượng dịch vụ của công ty, đáp
                     ứng được khoản vay lớn và lãi suất cũng hợp lý.
@@ -1203,195 +833,86 @@
           <p class="sm:pl-10 text-center sm:text-left">6074 Bình luận</p>
         </div>
         <div class="commnet mt-5 sm:pl-10">
-          <ul>
-            <li class="flex sm:gap-2 mt-6">
-              <div class="avatar mr-2 sm:mr-0">
-                <img src="theme/frontend/images/no-avt.png" alt="" />
+          <div class="flex sm:gap-2 mt-6">
+            <div class="avatar flex-[0_0_4.33%] max-w-[15%] mr-2 sm:mr-0">
+              <img src="theme/frontend/images/no-avt.png" alt="" />
+            </div>
+            <div class="text-sm flex-[0_0_94.33%] max-w-full">
+              <span class="info text-[#129AF6]">
+                <a href="#">Phạm Hưng</a>
+              </span>
+              <div class="content-comment">
+                <p>Giáo viên trung tâm nhiệt tình, cách dạy rất sinh động</p>
               </div>
-              <div class="text-sm">
-                <span class="info text-[#129AF6]">
-                  <a href="#">Phạm Hưng</a>
-                </span>
-                <div class="content-comment">
-                  <p>Giáo viên trung tâm nhiệt tình, cách dạy rất sinh động</p>
+              <div class="interact">
+                <div class="flex sm:gap-2 text-sm">
+                  <span class="cursor-pointer mr-2 sm:mr-0 text-[#129AF6]"
+                    >Like</span
+                  >
+                  <span class="cursor-pointer mr-2 sm:mr-0 text-[#129AF6]"
+                    >Reply</span
+                  >
+                  <div class="flex sm:gap-2">
+                    <img
+                      class="cursor-pointer mr-2 sm:mr-0"
+                      height="14"
+                      width="16"
+                      role="presentation"
+                      src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                      width="18"
+                    />
+                    <span class="text-[#129AF6] mr-2 sm:mr-0"> 14 </span>
+                    <span class="text-[#a6a6a6] mr-2 sm:mr-0"
+                      ><a href="#">3 Giờ trước</a></span
+                    >
+                  </div>
                 </div>
-                <div class="interact">
-                  <ul class="flex sm:gap-2 text-sm">
-                    <li class="mr-2 sm:mr-0">
-                      <span class="cursor-pointer text-[#129AF6]">Like</span>
-                    </li>
-                    <li class="mr-2 sm:mr-0">
-                      <span class="cursor-pointer text-[#129AF6]">Reply</span>
-                    </li>
-                    <li class="flex sm:gap-2">
+                <div class="reply_comment border-l-[1px] border-solid border-[#d3d6db] pl-2 my-3">
+                  <div class="flex sm:gap-2">
+                    <div class="avatar_comment mr-2 sm:mr-0 flex-[0_0_4.33%] max-w-[15%]">
                       <img
-                        class="cursor-pointer mr-2 sm:mr-0"
-                        height="18"
-                        role="presentation"
-                        src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
-                        width="18"
+                        src="theme/frontend/images/no-avt.png"
+                        alt="avatar"
                       />
-                      <span class="text-[#129AF6] mr-2 sm:mr-0"> 14 </span>
-                      <span class="text-[#a6a6a6] mr-2 sm:mr-0"
-                        ><a href="#">3 Giờ trước</a></span
+                    </div>
+                    <div class="box_comment flex-[0_0_94.33%] max-w-full">
+                      <textarea
+                        class="comment_replay min-h-[40px] w-full py-3 px-2 border-none outline-none resize-none"
+                        placeholder="Add a comment..."
+                      ></textarea>
+                      <div
+                        class="box_post bg-[#f5f6f7] p-2 border-t-[1px] border-[#d3d6db]"
                       >
-                    </li>
-                  </ul>
+                        <div class="pull-right flex justify-end sm:gap-2">
+                          <button
+                            class="btn-cancel bg-[#f5f6f7] text-[#4b4f56] rounded-sm text-sm font-bold text-center border-solid border-[1px] p-1 border-[#ccd0d5]"
+                            type="button"
+                          >
+                            Cancel</button
+                          ><button
+                            class="btn-reply ml-2 bg-[#4267b2] border-[#4267b2] border-solid border-[1px] p-1 text-[#fff] rounded-sm text-sm font-bold text-center"
+                            type="button"
+                            value="1"
+                          >
+                            Reply
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </li>
-            <li class="flex sm:gap-2 mt-6">
-              <div class="avatar mr-2 sm:mr-0">
-                <img src="theme/frontend/images/no-avt.png" alt="" />
-              </div>
-              <div class="text-sm">
-                <span class="info text-[#129AF6]">
-                  <a href="#">Phạm Hưng</a>
-                </span>
-                <div class="content-comment">
-                  <p>Giáo viên trung tâm nhiệt tình, cách dạy rất sinh động</p>
-                </div>
-                <div class="interact">
-                  <ul class="flex sm:gap-2 text-sm">
-                    <li class="mr-2 sm:mr-0">
-                      <span class="cursor-pointer text-[#129AF6]">Like</span>
-                    </li>
-                    <li class="mr-2 sm:mr-0">
-                      <span class="cursor-pointer text-[#129AF6]">Reply</span>
-                    </li>
-                    <li class="flex sm:gap-2">
-                      <img
-                        class="cursor-pointer mr-2 sm:mr-0"
-                        height="18"
-                        role="presentation"
-                        src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
-                        width="18"
-                      />
-                      <span class="text-[#129AF6] mr-2 sm:mr-0"> 14 </span>
-                      <span class="text-[#a6a6a6] mr-2 sm:mr-0"
-                        ><a href="#">3 Giờ trước</a></span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="flex sm:gap-2 mt-6">
-              <div class="avatar mr-2 sm:mr-0">
-                <img src="theme/frontend/images/no-avt.png" alt="" />
-              </div>
-              <div class="text-sm">
-                <span class="info text-[#129AF6]">
-                  <a href="#">Phạm Hưng</a>
-                </span>
-                <div class="content-comment">
-                  <p>Giáo viên trung tâm nhiệt tình, cách dạy rất sinh động</p>
-                </div>
-                <div class="interact">
-                  <ul class="flex sm:gap-2 text-sm">
-                    <li class="mr-2 sm:mr-0">
-                      <span class="cursor-pointer text-[#129AF6]">Like</span>
-                    </li>
-                    <li class="mr-2 sm:mr-0">
-                      <span class="cursor-pointer text-[#129AF6]">Reply</span>
-                    </li>
-                    <li class="flex sm:gap-2">
-                      <img
-                        class="cursor-pointer mr-2 sm:mr-0"
-                        height="18"
-                        role="presentation"
-                        src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
-                        width="18"
-                      />
-                      <span class="text-[#129AF6] mr-2 sm:mr-0"> 14 </span>
-                      <span class="text-[#a6a6a6] mr-2 sm:mr-0"
-                        ><a href="#">3 Giờ trước</a></span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="flex sm:gap-2 mt-6">
-              <div class="avatar mr-2 sm:mr-0">
-                <img src="theme/frontend/images/no-avt.png" alt="" />
-              </div>
-              <div class="text-sm">
-                <span class="info text-[#129AF6]">
-                  <a href="#">Phạm Hưng</a>
-                </span>
-                <div class="content-comment">
-                  <p>Giáo viên trung tâm nhiệt tình, cách dạy rất sinh động</p>
-                </div>
-                <div class="interact">
-                  <ul class="flex sm:gap-2 text-sm">
-                    <li class="mr-2 sm:mr-0">
-                      <span class="cursor-pointer text-[#129AF6]">Like</span>
-                    </li>
-                    <li class="mr-2 sm:mr-0">
-                      <span class="cursor-pointer text-[#129AF6]">Reply</span>
-                    </li>
-                    <li class="flex sm:gap-2">
-                      <img
-                        class="cursor-pointer mr-2 sm:mr-0"
-                        height="18"
-                        role="presentation"
-                        src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
-                        width="18"
-                      />
-                      <span class="text-[#129AF6] mr-2 sm:mr-0"> 14 </span>
-                      <span class="text-[#a6a6a6] mr-2 sm:mr-0"
-                        ><a href="#">3 Giờ trước</a></span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="flex sm:gap-2 mt-6">
-              <div class="avatar mr-2 sm:mr-0">
-                <img src="theme/frontend/images/no-avt.png" alt="" />
-              </div>
-              <div class="text-sm">
-                <span class="info text-[#129AF6]">
-                  <a href="#">Phạm Hưng</a>
-                </span>
-                <div class="content-comment">
-                  <p>Giáo viên trung tâm nhiệt tình, cách dạy rất sinh động</p>
-                </div>
-                <div class="interact">
-                  <ul class="flex sm:gap-2 text-sm">
-                    <li class="mr-2 sm:mr-0">
-                      <span class="cursor-pointer text-[#129AF6]">Like</span>
-                    </li>
-                    <li class="mr-2 sm:mr-0">
-                      <span class="cursor-pointer text-[#129AF6]">Reply</span>
-                    </li>
-                    <li class="flex sm:gap-2">
-                      <img
-                        class="cursor-pointer mr-2 sm:mr-0"
-                        height="18"
-                        role="presentation"
-                        src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
-                        width="18"
-                      />
-                      <span class="text-[#129AF6] mr-2 sm:mr-0"> 14 </span>
-                      <span class="text-[#a6a6a6] mr-2 sm:mr-0"
-                        ><a href="#">3 Giờ trước</a></span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="section-news mt-10">
       <div class="container mx-auto px-2.5 2xl:px-32">
         <div class="title text-center pb-8">
-          <h2 class="uppercase text-[36px] text-[#555]">
+          <h2
+            class="uppercase text-[20px] md:text-[24px] lg:text-[36px] text-[#555]"
+          >
             <span>Tin tức</span>
           </h2>
           <p>
@@ -1402,10 +923,10 @@
           </p>
         </div>
         <div
-          class="list-items-news flex justify-around flex-wrap gap-0 sm:gap-0"
+          class="list-items-news flex justify-between lg:justify-around flex-wrap gap-0 sm:gap-0"
         >
           <div
-            class="item-news mb-5 sm:mb-0 flex-[0_0_100%] max-w-full sm:flex-[0_0_30%] sm:max-w-[30%]"
+            class="item-news mb-5 sm:mb-0 flex-[0_0_48%] max-w-[50%] sm:flex-[0_0_30%] sm:max-w-[30%]"
           >
             <div class="item px-2.5 pt-2.5 pb-8">
               <div class="mb-4">
@@ -1433,7 +954,7 @@
             </div>
           </div>
           <div
-            class="item-news mb-5 sm:mb-0 flex-[0_0_100%] max-w-full sm:flex-[0_0_30%] sm:max-w-[30%]"
+            class="item-news mb-5 sm:mb-0 flex-[0_0_48%] max-w-[50%] sm:flex-[0_0_30%] sm:max-w-[30%]"
           >
             <div class="item px-2.5 pt-2.5 pb-8">
               <div class="mb-4">
@@ -1461,7 +982,7 @@
             </div>
           </div>
           <div
-            class="item-news mb-5 sm:mb-0 flex-[0_0_100%] max-w-full sm:flex-[0_0_30%] sm:max-w-[30%]"
+            class="item-news mb-5 sm:mb-0 flex-[0_0_48%] max-w-[50%] sm:flex-[0_0_30%] sm:max-w-[30%]"
           >
             <div class="item px-2.5 pt-2.5 pb-8">
               <div class="mb-4">
@@ -1570,7 +1091,6 @@
       </div>
     </footer>
     <script src="theme/frontend/js/swiper-bundle.min.js"></script>
-    <script src="theme/frontend/js/jquery-3.7.0.min.js"></script>
     <script src="theme/frontend/js/main.js"></script>
   </body>
 </html>
