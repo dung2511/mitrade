@@ -73,7 +73,7 @@
 }
 .language-mobile {
   opacity: 0;
-  visibility:hidden;
+  visibility: hidden;
   pointer-events: none;
   transition: all 0.5s;
   top: 0;
@@ -95,4 +95,45 @@
   .section-service .items-service {
     margin-bottom: 10px;
   }
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Source Han Sans TW";
+  src: url(../fonts/SourceHanSansTW-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Source Han Sans TW";
+  src: url(../fonts/SourceHanSansTW-Medium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Source Han Sans TW";
+  src: url(../fonts/SourceHanSansTW-Regular.otf);
+  font-weight: 400;
+}
+.section-news .item-news .s-title,
+.section-news .title h2,
+.section-feedback .title h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.section-news .item-news .s-content,
+.section-news .title p,
+.section-feedback .title p,
+.section-feedback .list-items-feedback {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+body {
+  font-family: "Source Han Sans TW";
 }
