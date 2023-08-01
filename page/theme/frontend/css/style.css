@@ -859,6 +859,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }
@@ -1552,6 +1556,10 @@ video {
     font-size: 28px;
   }
 
+  .lg\:text-\[20px\] {
+    font-size: 20px;
+  }
+
   .lg\:before\:absolute::before {
     content: var(--tw-content);
     position: absolute;
@@ -1565,6 +1573,31 @@ video {
   .lg\:before\:top-1\/2::before {
     content: var(--tw-content);
     top: 50%;
+  }
+
+  .lg\:before\:-left-1::before {
+    content: var(--tw-content);
+    left: -0.25rem;
+  }
+
+  .lg\:before\:-left-2::before {
+    content: var(--tw-content);
+    left: -0.5rem;
+  }
+
+  .lg\:before\:-left-20::before {
+    content: var(--tw-content);
+    left: -5rem;
+  }
+
+  .lg\:before\:top-6::before {
+    content: var(--tw-content);
+    top: 1.5rem;
+  }
+
+  .lg\:before\:top-5::before {
+    content: var(--tw-content);
+    top: 1.25rem;
   }
 
   .lg\:before\:h-\[2px\]::before {
