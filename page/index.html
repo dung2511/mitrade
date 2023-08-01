@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="theme/frontend/css/style.css" />
+    <link rel="stylesheet" href="theme/frontend/css/add.css" />
+    <link rel="stylesheet" href="theme/frontend/css/fontawesome.css" />
+    <link rel="stylesheet" href="theme/frontend/css/swiper-bundle.min.css" />
+    <link
+      rel="shortcut icon"
+      href="theme/frontend/images/appicon.png"
+      type="image/x-icon"
+    />
+    <title>MITRADE</title>
+  </head>
+  <body>
+    <header class="block fixed top-0 left-0 right-0 bg-white z-20">
+      <div class="container 2xl:px-32 mx-auto px-5">
+        <div class="flex">
+          <div class="logo align-middle w-1/2 whitespace-nowrap">
+            <svg class="w-[150px] h-[70px] sm:w-[200px]">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 600 108.99"
+                style="enable-background: new 0 0 600 108.99"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #0047bb;
+                  }
+
+                  .st1 {
+                    fill: #ff671f;
+                  }
+
+                  .st2 {
+                    fill: #333333;
+                  }
+                </style>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <polygon
+                          class="st0 fill-[#0047bb]"
+                          points="67.77,11.67 67.77,85.51 81.32,77.61 81.32,38.74 94.87,30.87 94.87,85.34 54.21,108.99
+            54.21,19.61 47.42,15.68 40.66,19.61 40.66,108.99 27.11,101.19 27.11,35.23 20.31,31.32 13.55,35.25 13.55,93.43 0,85.64
+            0,27.47 47.29,0 				"
+                        ></polygon>
+                        <g>
+                          <polygon
+                            class="st1"
+                            points="81.32,19.3 81.32,34.89 94.87,27.05 					"
+                          ></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <g>
+                    <path
+                      class="st2"
+                      d="M202.21,13.7v81.56h-16.36l0.81-63.59L162.3,81.74h-7.31l-24.36-50.08l0.81,63.59h-16.36V13.7h22.04
+        l21.46,45.45l21.58-45.45H202.21z"
+                    ></path>
+                    <path
+                      class="st2"
+                      d="M210.42,38.26h16.36v56.99h-16.36V38.26z"
+                    ></path>
+                    <path
+                      class="st1"
+                      d="M300.62,27.23h-24.59v68.03h-16.36V27.23h-24.71V13.7h65.66V27.23z"
+                    ></path>
+                    <path
+                      class="st1"
+                      d="M359.16,95.26l-15.2-30.75c-1.04,0.11-2.2,0.11-3.36,0.11h-16.59v30.64h-16.36V13.7h34.11
+        c17.87,0,29.58,10.36,29.58,25.79c0,9.04-4.52,16.42-12.18,20.72l18.33,35.05H359.16z M340.95,54.48
+        c8.12,0,13.57-5.47,13.57-13.62c0-8.15-5.57-13.62-13.81-13.62h-16.71v27.25H340.95z"
+                    ></path>
+                    <path
+                      class="st1"
+                      d="M439.04,76.63h-32.25l-6.03,18.63h-17.4l28.89-81.56h21.35l28.89,81.56h-17.4L439.04,76.63z M434.87,63.74
+        L422.92,26.6l-11.95,37.14H434.87z"
+                    ></path>
+                    <path
+                      class="st1"
+                      d="M536.28,54.48c0,24.47-16.36,40.78-40.95,40.78H468.3V13.7h27.03C519.92,13.7,536.28,30.01,536.28,54.48z
+         M518.95,54.48c0-16.37-9.75-27.25-24.26-27.25h-9.64v54.49h9.64C509.2,81.73,518.95,70.85,518.95,54.48z"
+                    ></path>
+                    <path
+                      class="st1"
+                      d="M600,81.73v13.53h-57.86V13.7h57.66l-2.32,13.53H558.5v20.3h38.19v12.79H558.5v21.41H600z"
+                    ></path>
+                    <circle class="st1" cx="218.6" cy="21.88" r="8.18"></circle>
+                  </g>
+                </g>
+              </svg>
+            </svg>
+          </div>
+          <div
+            class="flex gap-5 justify-end md:justify-center md:gap-10 items-center align-middle w-1/2 whitespace-nowrap"
+          >
+            <div
+              class="hidden md:block cursor-pointer relative header-language"
+            >
+              <div class="wrap-language flex items-center">
+                <img
+                  class="w-5 h-5 float-left mr-2.5"
+                  src="theme/frontend/images/lang-m.png"
+                  alt=""
+                />
+                <span>Tiếng Việt</span>
+              </div>
+              <ul
+                class="nav hidden bg-white w-full absolute nav-language-desktop"
+              >
+                <li>
+                  <a href="#">繁體中文</a>
+                </li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Tiếng Việt</a></li>
+              </ul>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="h-10 block px-5 text-center bg-[#3682FF] border border-solid border-[#196ffc] text-[#ffffff] leading-10 rounded"
+              >
+                Đăng ký
+              </a>
+            </div>
+
+            <div id="hamburger" class="hampurger block md:hidden">
+              <span
+                class="flex justify-center items-center cursor-pointer w-10 h-10 bg-[#0000004d] rounded-full"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+            </div>
+          </div>
+          <div
+            id="language-mobile"
+            class="bg-white w-52 md:hidden language-mobile h-screen fixed z-50"
+          >
+            <nav class="nav nav-language-mobile">
+              <div class="flex justify-end pr-5 py-5 close-language">
+                <span class="text-xl cursor-pointer"
+                  ><i class="fa-solid fa-xmark"></i
+                ></span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">繁體中文</a>
+                </li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Tiếng Việt</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div
+            id="close-language"
+            class="bg-[#4444444a] lg:bg-inherit hidden fixed top-0 left-0 right-0 bottom-0 z-30"
+          ></div>
+        </div>
+      </div>
+    </header>
+    <section class="section1">
+      <div
+        class="container 2xl:pl-32 mx-auto bg-[url('../images/bg-banner.jpg')] bg-no-repeat bg-[length:100%_100%] mt-[70px] md:h-auto"
+      >
+        <div
+          class="wrap pt-16 lg:pt-0 overflow-hidden block lg:flex items-center h-auto px-4 mx-auto my-0 relative"
+        >
+          <div
+            class="toCenter lg:w-1/2 lg:text-left text-center lg:relative z-10"
+          >
+            <img
+              src="theme/frontend/images/appicon.png"
+              alt=""
+              class="hidden lg:block"
+              width="70"
+            />
+            <h1 class="mb-7 md:mb-9">
+              <span class="text-[28px] font-bold text-[#ffffff] md:text-[40px]">
+                Tại sao Mitrade là lựa chọn ưu tiên để giao dịch?
+              </span>
+            </h1>
+            <h3 class="text-[18px] lg:text-[24px] text-[#ffffff]">
+              Trải nghiệm đơn giản hóa giao dịch với nền tảng trực quan của
+              chúng tôi
+            </h3>
+            <p class="text-[14px] mb-5">
+              <span class="text-[#fff] text-[14px] md:text-[20px] opacity-80">
+                Giao dịch chỉ số, hàng hóa và hơn thế nữa trên nền tảng độc
+                quyền của chúng tôi. Luôn cập nhật mới nhất các tin tức và giá
+                thị trường, cung cấp các công cụ quản lý rủi ro đa dạng và phong
+                phú
+              </span>
+            </p>
+            <a
+              class="inline-block text-[18px] text-[#fff] align-top cursor-pointer overflow-hidden whitespace-nowrap h-[60px] leading-[60px] px-6 m-0 bg-[#3682FF] rounded md:h-[60px] md:leading-[60px] md:px-10 md:text-[28px]"
+              href="#"
+              >Tải xuống ứng dụng</a
+            >
+          </div>
+          <img
+            src="theme/frontend/images/banner-m.png"
+            alt=""
+            class="md:w-[324px] mx-auto h-auto block lg:absolute bottom-0 lg:h-full lg:w-auto lg:left-full lg:-translate-x-1/2 xl:right-0 xl:translate-x-0 xl:left-auto"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="section-service mt-10">
+      <div class="container mx-auto px-2.5 2xl:px-32">
+        <div class="list-items-service gap-2.5 justify-between flex flex-wrap">
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="items-service pt-2.5 pb-10 border rounded border-[#ebebeb] flex flex-col items-center text-center flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[calc(33%-5px)] lg:flex-[0_0_24%] lg:max-w-[50%]"
+          >
+            <h2 class="title text-[#FDBB40] font-semibold">
+              <a href="#"><span>Tên gói dịch vụ</span></a>
+            </h2>
+            <a
+              href="#"
+              class="border-[3px] border-[#ebebeb] border-solid rounded-full"
+            >
+              <img src="theme/frontend/images/thantai.png" alt="" />
+            </a>
+            <div class="info-service mt-1">
+              <div class="item-rating text-[#FABF57]">
+                <p class="rating">
+                  <span class="rating-box">
+                    <i class="star fa fa-star" data-score="1"></i>
+                    <i class="star fa fa-star" data-score="2"></i>
+                    <i class="star fa fa-star" data-score="3"></i>
+                    <i class="star fa fa-star" data-score="4"></i>
+                    <i class="star fa fa-star" data-score="5"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="text-[12px]"><span>(Độ chuẩn xác: 95%)</span></div>
+              <div
+                class="mt-2.5 bg-gradient-to-b from-[#F84A6D] to-[#F3182E] p-1.5 rounded"
+              >
+                <a class="uppercase text-white" href="#">mua cầu ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-choose mt-10">
+      <div class="container 2xl:px-32 mx-auto px-2.5">
+        <div class="title text-center text-[#44505C]">
+          <h2 class="title-section font-bold text-[24px]">
+            <span> Tại sao nên chọn XTB? </span>
+          </h2>
+          <p class="max-w-sm mx-auto">
+            Với hơn 20 năm kinh nghiệm, XTB là 1 trong những nhà môi giới Forex
+            & CFD lớn nhất trên thế giới được niêm yết trên sàn chứng khoán.
+          </p>
+        </div>
+        <div class="list-items-why flex flex-wrap mt-10">
+          <div
+            class="items-why text-center py-10 flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[33%]"
+          >
+            <div class="img-items-why flex justify-center">
+              <img src="theme/frontend/images/item-why.png" alt="" />
+            </div>
+            <p
+              class="title-items-why text-[#44505C] mt-2 font-semibold md:text-[20px] lg:text-[24px]"
+            >
+              Hơn 2,100 sản phẩm
+            </p>
+          </div>
+          <div
+            class="items-why text-center py-10 flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[33%]"
+          >
+            <div class="img-items-why flex justify-center">
+              <img src="theme/frontend/images/item-why.png" alt="" />
+            </div>
+            <p
+              class="title-items-why text-[#44505C] mt-2 font-semibold md:text-[20px] lg:text-[24px]"
+            >
+              Đào tạo toàn diện
+            </p>
+          </div>
+          <div
+            class="items-why text-center py-10 flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[33%]"
+          >
+            <div class="img-items-why flex justify-center">
+              <img src="theme/frontend/images/item-why.png" alt="" />
+            </div>
+            <p
+              class="title-items-why text-[#44505C] mt-2 font-semibold md:text-[20px] lg:text-[24px]"
+            >
+              An toàn và bảo mật
+            </p>
+          </div>
+          <div
+            class="items-why text-center py-10 flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[33%]"
+          >
+            <div class="img-items-why flex justify-center">
+              <img src="theme/frontend/images/item-why.png" alt="" />
+            </div>
+            <p
+              class="title-items-why text-[#44505C] mt-2 font-semibold md:text-[20px] lg:text-[24px]"
+            >
+              Nền tảng đột phá
+            </p>
+          </div>
+          <div
+            class="items-why text-center py-10 flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[33%]"
+          >
+            <div class="img-items-why flex justify-center">
+              <img src="theme/frontend/images/item-why.png" alt="" />
+            </div>
+            <p
+              class="title-items-why text-[#44505C] mt-2 font-semibold md:text-[20px] lg:text-[24px]"
+            >
+              Thương hiệu được niêm yết
+            </p>
+          </div>
+          <div
+            class="items-why text-center py-10 flex-[0_0_48%] max-w-[50%] md:flex-[0_0_33%] md:max-w-[33%]"
+          >
+            <div class="img-items-why flex justify-center">
+              <img src="theme/frontend/images/item-why.png" alt="" />
+            </div>
+            <p
+              class="title-items-why text-[#44505C] mt-2 font-semibold md:text-[20px] lg:text-[24px]"
+            >
+              Hỗ trợ khách hàng 24/7
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-question mt-10">
+      <div class="container 2xl:px-32 mx-auto px-2.5">
+        <div class="title text-center text-[#44505C]">
+          <h2 class="title-section font-bold text-[24px]">
+            <span> Câu hỏi thường gặp </span>
+          </h2>
+          <p class="text-[26px] font-medium">Các thông tin cần quan tâm</p>
+        </div>
+        <div class="list-question">
+          <div class="item-question mt-3">
+            <div
+              class="question flex justify-between items-center cursor-pointer border-b border-solid border-[#ebebeb] pb-1.5"
+            >
+              <p class="text-[20px] font-bold">XTB là gì ?</p>
+              <span class="text-[24px]">
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+            <div class="answer hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              natus, impedit, modi iure consectetur, accusamus dicta sit
+              architecto ullam dignissimos ut cupiditate voluptatibus magni quos
+              temporibus nisi quis debitis. Numquam.
+            </div>
+          </div>
+          <div class="item-question mt-3">
+            <div
+              class="question flex justify-between items-center cursor-pointer border-b border-solid border-[#ebebeb] pb-1.5"
+            >
+              <p class="text-[20px] font-bold">
+                XTB hỗ trợ giao dịch trên nền tảng nào ?
+              </p>
+              <span class="text-[24px]">
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+            <div class="answer hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              natus, impedit, modi iure consectetur, accusamus dicta sit
+              architecto ullam dignissimos ut cupiditate voluptatibus magni quos
+              temporibus nisi quis debitis. Numquam.
+            </div>
+          </div>
+          <div class="item-question mt-3">
+            <div
+              class="question flex justify-between items-center cursor-pointer border-b border-solid border-[#ebebeb] pb-1.5"
+            >
+              <p class="text-[20px] font-bold">
+                XTB hỗ trợ thanh toán bằng phương thức nào ?
+              </p>
+              <span class="text-[24px]">
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+            <div class="answer hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              natus, impedit, modi iure consectetur, accusamus dicta sit
+              architecto ullam dignissimos ut cupiditate voluptatibus magni quos
+              temporibus nisi quis debitis. Numquam.
+            </div>
+          </div>
+          <div class="item-question mt-3">
+            <div
+              class="question flex justify-between items-center cursor-pointer border-b border-solid border-[#ebebeb] pb-1.5"
+            >
+              <p class="text-[20px] font-bold">XTB có mấy loại tài khoản ?</p>
+              <span class="text-[24px]">
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+            <div class="answer hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              natus, impedit, modi iure consectetur, accusamus dicta sit
+              architecto ullam dignissimos ut cupiditate voluptatibus magni quos
+              temporibus nisi quis debitis. Numquam.
+            </div>
+          </div>
+          <div class="item-question mt-3">
+            <div
+              class="question flex justify-between items-center cursor-pointer border-b border-solid border-[#ebebeb] pb-1.5"
+            >
+              <p class="text-[20px] font-bold">
+                Nếu tôi cần hỗ trợ, XTB sẽ hỗ trợ như nào ?
+              </p>
+              <span class="text-[24px]">
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+            <div class="answer hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              natus, impedit, modi iure consectetur, accusamus dicta sit
+              architecto ullam dignissimos ut cupiditate voluptatibus magni quos
+              temporibus nisi quis debitis. Numquam.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section-trust mt-10 bg-[url('../images/section4-bg.png')] bg-no-repeat bg-cover bg-center"
+    >
+      <div class="container 2xl:px-32 mx-auto py-32 px-2.5">
+        <div class="flex justify-between flex-wrap">
+          <div
+            class="intro-trust lg:pl-16 text-white flex-[0_0_100%] max-w-full md:flex-[0_0_48%] md:max-w-[50%]"
+          >
+            <h2
+              class="title text-[20px] lg:text-[24px] text-center md:text-left mb-5 font-semibold md:mb-10 relative"
+            >
+              <span
+                class="lg:before:content-[''] lg:before:absolute lg:before:w-[60px] lg:before:h-[2px] lg:before:top-1/2 lg:before:-left-16 lg:translate-y-1/2 lg:before:bg-white"
+              >
+                Nền tảng đáng tin cậy của bạn
+              </span>
+            </h2>
+            <p class="s-content mb-8">
+              Mọi giao dịch đều liên quan đến rủi ro và Mitrade cần thực hiện
+              nhiều bức để cung cấp cho các bạn một môi trường giao dịch có
+              trách nhiệm đối với mỗi khách hàng.
+            </p>
+            <div class="flex justify-center md:inline-block">
+              <a class="p-4 rounded bg-[#3E84FD]" href="#"
+                >Trải nghiệm nền tảng của chúng tôi</a
+              >
+            </div>
+          </div>
+          <div
+            class="list-trust mt-14 md:mt-0 text-white flex-[0_0_100%] max-w-full md:flex-[0_0_48%] md:max-w-[50%]"
+          >
+            <ul>
+              <li class="flex gap-2 items-start mb-8">
+                <span class="text-[#3E84FD] text-[20px]"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <p>Nền tảng độc quyền với các chức năng nâng cao</p>
+              </li>
+              <li class="flex gap-2 items-start mb-8">
+                <span class="text-[#3E84FD] text-[20px]"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <p>
+                  Tiền gửi của bạn được giữ trong 1 tài khoản ủy thác riêng biệt
+                  khi được yêu cầu theo luật pháp Úc
+                </p>
+              </li>
+              <li class="flex gap-2 items-start mb-8">
+                <span class="text-[#3E84FD] text-[20px]"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <p>
+                  Chúng tôi có cơ chế bảo vệ số dư âm, giúp ngăn tài khoản của
+                  bạn không bị mất nhiều hơn số tiền gửi của bạn.
+                </p>
+              </li>
+              <li class="flex gap-2 items-start mb-8">
+                <span class="text-[#3E84FD] text-[20px]"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                <p>
+                  Các chuyên viên chăm sóc khách hàng của chúng tôi sẽ luôn tận
+                  tâm 24/5 và phục vụ tất cả các câu hỏi của bạn
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-risk-mgr">
+      <div class="container 2xl:px-32 mx-auto px-2 py-16 xl:py-32">
+        <div class="flex flex-wrap justify-between">
+          <div
+            class="title-risk lg:pl-16 flex-[0_0_100%] max-w-full md:flex-[0_0_48%] md:max-w-[50%]"
+          >
+            <h2 class="text-[#3E84FD] text-[24px] lg:text-[28px] mb-6 relative">
+              <span
+                class="lg:before:content-[''] lg:before:absolute lg:before:w-[60px] lg:before:h-[2px] lg:before:top-1/2 lg:before:-left-16 lg:translate-y-1/2 lg:before:bg-[#3E84FD]"
+                >Quản lý rủi ro của bạn một cách hiệu quả</span
+              >
+            </h2>
+            <p class="s-content mb-8 text-[18px] text-[#202020]">
+              Tải xuống ứng dụng và bắt đầu hành trình giao dịch của bạn với
+              Mitrade. Tận hưởng sự tiện lợi của các công cụ quản lý rủi ro
+              thông minh trong thời kỳ biến động.
+            </p>
+          </div>
+          <div
+            class="img-risk-mgr flex-[0_0_100%] max-w-full md:flex-[0_0_48%] md:max-w-[50%]"
+          >
+            <img src="theme/frontend/images/section-risk.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section-achievements bg-[url('../images/bg-archievements.png')] bg-no-repeat bg-cover bg-center"
+    >
+      <div class="container mx-auto px-2.5 py-24 2xl:px-32">
+        <div class="title-achievements text-center">
+          <h2 class="text-[36px] font-bold text-white">
+            <span>Các thành tựu của chúng tôi</span>
+          </h2>
+        </div>
+        <div class="list-items-achievements hidden sm:block sm:mt-16 md:mt-24">
+          <ul class="flex justify-between flex-wrap">
+            <li class="flex-[0_0_22%] max-w-[25%]">
+              <img src="theme/frontend/images/award_1.png" alt="" />
+            </li>
+            <li class="flex-[0_0_22%] max-w-[25%]">
+              <img src="theme/frontend/images/award_2.png" alt="" />
+            </li>
+            <li class="flex-[0_0_22%] max-w-[25%]">
+              <img src="theme/frontend/images/award_3.png" alt="" />
+            </li>
+            <li class="flex-[0_0_22%] max-w-[25%]">
+              <img src="theme/frontend/images/award_4.png" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="block sm:hidden">
+          <div class="swiper sl-achievements_mains mt-16 md:mt-24">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-achievements">
+                  <img src="theme/frontend/images/award_1.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-achievements">
+                  <img src="theme/frontend/images/award_2.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-achievements">
+                  <img src="theme/frontend/images/award_3.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-achievements">
+                  <img src="theme/frontend/images/award_4.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination pagination-achievements"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-feedback mt-10">
+      <div class="container mx-auto px-2.5 2xl:px-32">
+        <div class="title text-center pb-8">
+          <h2 class="uppercase text-[36px] text-[#555]">
+            <span>Ý kiến khách hàng</span>
+          </h2>
+          <p>
+            Tư vấn vay:
+            <strong class="text-[#ff0000]"
+              ><a href="tel:0987353984">0987.353.984</a></strong
+            >
+          </p>
+        </div>
+        <div
+          class="list-items-feedback flex justify-between flex-wrap gap-8 sm:gap-0"
+        >
+          <div
+            class="item-feedback flex-[0_0_100%] max-w-full sm:flex-[0_0_30%] sm:max-w-[30%] shadow-[0_1px_3px_-2px_rgbg(0_0_0_0.12)]"
+          >
+            <div class="item px-2.5 pt-2.5 pb-8">
+              <div class="w-32 mx-auto mb-4">
+                <img
+                  src="theme/frontend/images/phuhuynhtuan.png"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+              <div class="info flex flex-col items-center">
+                <div class="item-rating text-[#d26e4b]">
+                  <p class="rating">
+                    <span class="rating-box">
+                      <i class="star fa fa-star" data-score="1"></i>
+                      <i class="star fa fa-star" data-score="2"></i>
+                      <i class="star fa fa-star" data-score="3"></i>
+                      <i class="star fa fa-star" data-score="4"></i>
+                      <i class="star fa fa-star" data-score="5"></i>
+                    </span>
+                  </p>
+                </div>
+                <div class="s-content text-center text-xs text-[#777777]">
+                  <p>
+                    Tôi thấy hài lòng với chất lượng dịch vụ của công ty, đáp
+                    ứng được khoản vay lớn và lãi suất cũng hợp lý.
+                  </p>
+                </div>
+                <div class="info-customer pt-4 text-center text-xs">
+                  <span class="font-bold text-[#777777]">Hoàng Tuấn Anh</span
+                  ><span>/</span><span>(0913xxxxxx)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="item-feedback flex-[0_0_100%] max-w-full sm:flex-[0_0_30%] sm:max-w-[30%] shadow-[0_1px_3px_-2px_rgbg(0_0_0_0.12)]"
+          >
+            <div class="item px-2.5 pt-2.5 pb-8">
+              <div class="w-32 mx-auto mb-4">
+                <img
+                  src="theme/frontend/images/phuhuynhtuan.png"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+              <div class="info flex flex-col items-center">
+                <div class="item-rating text-[#d26e4b]">
+                  <p class="rating">
+                    <span class="rating-box">
+                      <i class="star fa fa-star" data-score="1"></i>
+                      <i class="star fa fa-star" data-score="2"></i>
+                      <i class="star fa fa-star" data-score="3"></i>
+                      <i class="star fa fa-star" data-score="4"></i>
+                      <i class="star fa fa-star" data-score="5"></i>
+                    </span>
+                  </p>
+                </div>
+                <div class="s-content text-center text-xs text-[#777777]">
+                  <p>
+                    Tôi thấy hài lòng với chất lượng dịch vụ của công ty, đáp
+                    ứng được khoản vay lớn và lãi suất cũng hợp lý.
+                  </p>
+                </div>
+                <div class="info-customer pt-4 text-center text-xs">
+                  <span class="font-bold text-[#777777]">Hoàng Tuấn Anh</span
+                  ><span>/</span><span>(0913xxxxxx)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="item-feedback flex-[0_0_100%] max-w-full sm:flex-[0_0_30%] sm:max-w-[30%] shadow-[0_1px_3px_-2px_rgbg(0_0_0_0.12)]"
+          >
+            <div class="item px-2.5 pt-2.5 pb-8">
+              <div class="w-32 mx-auto mb-4">
+                <img
+                  src="theme/frontend/images/phuhuynhtuan.png"
+                  alt=""
+                  class="rounded-full"
+                />
+              </div>
+              <div class="info flex flex-col items-center">
+                <div class="item-rating text-[#d26e4b]">
+                  <p class="rating">
+                    <span class="rating-box">
+                      <i class="star fa fa-star" data-score="1"></i>
+                      <i class="star fa fa-star" data-score="2"></i>
+                      <i class="star fa fa-star" data-score="3"></i>
+                      <i class="star fa fa-star" data-score="4"></i>
+                      <i class="star fa fa-star" data-score="5"></i>
+                    </span>
+                  </p>
+                </div>
+                <div class="s-content text-center text-xs text-[#777777]">
+                  <p>
+                    Tôi thấy hài lòng với chất lượng dịch vụ của công ty, đáp
+                    ứng được khoản vay lớn và lãi suất cũng hợp lý.
+                  </p>
+                </div>
+                <div class="info-customer pt-4 text-center text-xs">
+                  <span class="font-bold text-[#777777]">Hoàng Tuấn Anh</span
+                  ><span>/</span><span>(0913xxxxxx)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-comment mt-10 bg-[#FFFBF8] pb-6">
+      <div class="container mx-auto px-2.5 2xl:px-32 relative pt-6">
+        <div class="total-comment bg-[#E9E9E9] py-2.5 sticky z-10 top-20">
+          <p class="sm:pl-10 text-center sm:text-left">6074 Bình luận</p>
+        </div>
+        <div class="commnet mt-5 sm:pl-10">
+          <ul>
+            <li class="flex gap-2 mt-6">
+              <div class="avatar">
+                <img src="theme/frontend/images/no-avt.png" alt="" />
+              </div>
+              <div class="">
+                <span class="info text-[#129AF6]">
+                  <a href="#">Phạm Hưng</a>
+                </span>
+                <div class="content-comment">
+                  <p>Giáo viên trung tâm nhiệt tình, cách dạy rất sinh động</p>
+                </div>
+                <div class="interact">
+                  <ul class="flex gap-2 text-sm">
+                    <li>
+                      <span class="cursor-pointer text-[#129AF6]">Like</span>
+                    </li>
+                    <li>
+                      <span class="cursor-pointer text-[#129AF6]">Reply</span>
+                    </li>
+                    <li class="flex gap-2">
+                      <img
+                        class="cursor-pointer"
+                        height="18"
+                        role="presentation"
+                        src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                        width="18"
+                      />
+                      <span class="text-[#129AF6]"> 14 </span>
+                      <span class="text-[#a6a6a6]"
+                        ><a href="#">3 Giờ trước</a></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="flex gap-2 mt-6">
+              <div class="avatar">
+                <img src="theme/frontend/images/no-avt.png" alt="" />
+              </div>
+              <div class="">
+                <span class="info text-[#129AF6]">
+                  <a href="#">Phạm Hưng</a>
+                </span>
+                <div class="content-comment">
+                  <p>Giáo viên trung tâm nhiệt tình, cách dạy rất sinh động</p>
+                </div>
+                <div class="interact">
+                  <ul class="flex gap-2 text-sm">
+                    <li>
+                      <span class="cursor-pointer text-[#129AF6]">Like</span>
+                    </li>
+                    <li>
+                      <span class="cursor-pointer text-[#129AF6]">Reply</span>
+                    </li>
+                    <li class="flex gap-2">
+                      <img
+                        class="cursor-pointer"
+                        height="18"
+                        role="presentation"
+                        src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                        width="18"
+                      />
+                      <span class="text-[#129AF6]"> 14 </span>
+                      <span class="text-[#a6a6a6]"
+                        ><a href="#">3 Giờ trước</a></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="flex gap-2 mt-6">
+              <div class="avatar">
+                <img src="theme/frontend/images/no-avt.png" alt="" />
+              </div>
+              <div class="">
+                <span class="info text-[#129AF6]">
+                  <a href="#">Phạm Hưng</a>
+                </span>
+                <div class="content-comment">
+                  <p>Giáo viên trung tâm nhiệt tình, cách dạy rất sinh động</p>
+                </div>
+                <div class="interact">
+                  <ul class="flex gap-2 text-sm">
+                    <li>
+                      <span class="cursor-pointer text-[#129AF6]">Like</span>
+                    </li>
+                    <li>
+                      <span class="cursor-pointer text-[#129AF6]">Reply</span>
+                    </li>
+                    <li class="flex gap-2">
+                      <img
+                        class="cursor-pointer"
+                        height="18"
+                        role="presentation"
+                        src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                        width="18"
+                      />
+                      <span class="text-[#129AF6]"> 14 </span>
+                      <span class="text-[#a6a6a6]"
+                        ><a href="#">3 Giờ trước</a></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="flex gap-2 mt-6">
+              <div class="avatar">
+                <img src="theme/frontend/images/no-avt.png" alt="" />
+              </div>
+              <div class="">
+                <span class="info text-[#129AF6]">
+                  <a href="#">Phạm Hưng</a>
+                </span>
+                <div class="content-comment">
+                  <p>Giáo viên trung tâm nhiệt tình, cách dạy rất sinh động</p>
+                </div>
+                <div class="interact">
+                  <ul class="flex gap-2 text-sm">
+                    <li>
+                      <span class="cursor-pointer text-[#129AF6]">Like</span>
+                    </li>
+                    <li>
+                      <span class="cursor-pointer text-[#129AF6]">Reply</span>
+                    </li>
+                    <li class="flex gap-2">
+                      <img
+                        class="cursor-pointer"
+                        height="18"
+                        role="presentation"
+                        src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                        width="18"
+                      />
+                      <span class="text-[#129AF6]"> 14 </span>
+                      <span class="text-[#a6a6a6]"
+                        ><a href="#">3 Giờ trước</a></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="flex gap-2 mt-6">
+              <div class="avatar">
+                <img src="theme/frontend/images/no-avt.png" alt="" />
+              </div>
+              <div class="">
+                <span class="info text-[#129AF6]">
+                  <a href="#">Phạm Hưng</a>
+                </span>
+                <div class="content-comment">
+                  <p>Giáo viên trung tâm nhiệt tình, cách dạy rất sinh động</p>
+                </div>
+                <div class="interact">
+                  <ul class="flex gap-2 text-sm">
+                    <li>
+                      <span class="cursor-pointer text-[#129AF6]">Like</span>
+                    </li>
+                    <li>
+                      <span class="cursor-pointer text-[#129AF6]">Reply</span>
+                    </li>
+                    <li class="flex gap-2">
+                      <img
+                        class="cursor-pointer"
+                        height="18"
+                        role="presentation"
+                        src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e"
+                        width="18"
+                      />
+                      <span class="text-[#129AF6]"> 14 </span>
+                      <span class="text-[#a6a6a6]"
+                        ><a href="#">3 Giờ trước</a></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section-news mt-10">
+      <div class="container mx-auto px-2.5 2xl:px-32">
+        <div class="title text-center pb-8">
+          <h2 class="uppercase text-[36px] text-[#555]">
+            <span>Tin tức</span>
+          </h2>
+          <p>
+            Tư vấn vay:
+            <strong class="text-[#ff0000]"
+              ><a href="tel:0987353984">0987.353.984</a></strong
+            >
+          </p>
+        </div>
+        <div
+          class="list-items-news flex justify-between flex-wrap gap-8 sm:gap-0"
+        >
+          <div
+            class="item-news flex-[0_0_100%] max-w-full sm:flex-[0_0_30%] sm:max-w-[30%]"
+          >
+            <div class="item px-2.5 pt-2.5 pb-8">
+              <div class="mb-4">
+                <img
+                  src="theme/frontend/images/Screenshot_9.png"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <div class="info flex flex-col items-center px-2.5">
+                <div
+                  class="s-title text-sm sm:text-lg text-[#555555] font-medium text-center"
+                >
+                  <p>Vì sao chọn Vay nhanh cấp tốc Hà Nội ?</p>
+                </div>
+                <div class="s-content text-sm text-[#777777]">
+                  <p>
+                    Tôi thấy hài lòng với chất lượng dịch vụ của công ty, đáp
+                    ứng được khoản vay lớn và lãi suất cũng hợp lý.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="item-news flex-[0_0_100%] max-w-full sm:flex-[0_0_30%] sm:max-w-[30%] shadow-[0_1px_3px_-2px_rgbg(0_0_0_0.12)]"
+          >
+            <div class="item px-2.5 pt-2.5 pb-8">
+              <div class="mb-4">
+                <img
+                  src="theme/frontend/images/Screenshot_9.png"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <div class="info flex flex-col items-center px-2.5">
+                <div
+                  class="s-title text-sm sm:text-lg text-[#555555] font-medium text-center"
+                >
+                  <p>Vì sao chọn Vay nhanh cấp tốc Hà Nội ?</p>
+                </div>
+                <div class="s-content text-sm text-[#777777]">
+                  <p>
+                    Tôi thấy hài lòng với chất lượng dịch vụ của công ty, đáp
+                    ứng được khoản vay lớn và lãi suất cũng hợp lý.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="item-news flex-[0_0_100%] max-w-full sm:flex-[0_0_30%] sm:max-w-[30%] shadow-[0_1px_3px_-2px_rgbg(0_0_0_0.12)]"
+          >
+            <div class="item px-2.5 pt-2.5 pb-8">
+              <div class="mb-4">
+                <img
+                  src="theme/frontend/images/Screenshot_9.png"
+                  alt=""
+                  class=""
+                />
+              </div>
+              <div class="info flex flex-col items-center px-2.5">
+                <div
+                  class="s-title text-sm sm:text-lg text-[#555555] font-medium text-center"
+                >
+                  <p>Vì sao chọn Vay nhanh cấp tốc Hà Nội ?</p>
+                </div>
+                <div class="s-content text-sm text-[#777777]">
+                  <p>
+                    Tôi thấy hài lòng với chất lượng dịch vụ của công ty, đáp
+                    ứng được khoản vay lớn và lãi suất cũng hợp lý.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#eff1f2] footer pb-10 mt-10">
+      <div class="container mx-auto px-2.5 2xl:px-32 pt-9">
+        <div class="logo-footer w-14 mx-auto mb-10">
+          <img src="theme/frontend/images/appicon.png" alt="" width="70" />
+        </div>
+        <div class="social mb-6">
+          <p class="text-[#4d555a] text-center font-medium mb-5">
+            Theo dõi cộng đồng của chúng tôi
+          </p>
+          <div class="flex justify-center gap-4">
+            <a href="#"
+              ><img src="theme/frontend/images/footer-icon1.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="theme/frontend/images/footer-icon2.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="theme/frontend/images/footer-icon3.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div
+          class="policy flex flex-wrap gap-1 justify-center text-sm font-bold text-[#8c9ba5] my-5"
+        >
+          <a href="#">Chính sách bảo mật |</a>
+          <a href="#">Chính sách bảo mật |</a>
+          <a href="#">Chính sách bảo mật |</a>
+          <a href="#">Chính sách bảo mật |</a>
+          <a href="#">Chính sách bảo mật</a>
+        </div>
+        <div class="content text-sm text-[#4d555a]">
+          <p class="s-content">
+            Cảnh báo rủi ro: Giao dịch phái sinh thị trường OTC là rủi ro. Nó
+            không phù hợp cho tất cả mọi người và nó có thể dẫn đến việc mất
+            toàn bộ vốn của bạn. Vui lòng xem xét Danh mục sản phẩm, Công bố rủi
+            ro và Thỏa thuận khách hàng của chúng tôi trước khi sử dụng các dịch
+            vụ của chúng tôi và đảm bảo rằng bạn hiểu các rủi ro liên quan. Bạn
+            không sở hữu hoặc có bất kỳ quyền lợi gì đến các tài sản cơ bản.
+          </p>
+          <p class="s-content">
+            Mitrade Holding Ltd không đưa ra lời khuyên, khuyến nghị hoặc ý kiến
+            ​​liên quan đến việc mua, giữ hoặc xử lý các sản phẩm của chúng tôi.
+            Thông tin trên trang web này mang tính tương đối khách quan và không
+            nhắm đến các mục tiêu cá nhân, hoàn cảnh tài chính hoặc nhu cầu của
+            bạn. Hãy tìm kiếm và chọn lọc các lời khuyên phù hợp cho riêng bạn.
+          </p>
+          <p class="s-content">
+            Tất cả các sản phẩm của chúng tôi đều có đòn bẩy, và sử dụng công cụ
+            phái sinh trên thị trường OTC dựa trên các tài sản cơ sở quốc tế.
+            Mitrade Holding Ltd chỉ cung cấp dịch vụ thực hiện, hoạt động theo
+            nguyên tắc vào mọi lúc.
+          </p>
+          <p class="s-content">
+            Trang web này được sở hữu và vận hành bởi Mitrade Holding Ltd, có
+            trụ sở tại Quần đảo Cayman(Cayman Islands) và được ủy quyền&quản lý
+            bởi Cơ quan Tiền tệ Quần đảo Cayman (Cayman Islands Monetary
+            Authority).
+          </p>
+          <p class="s-content">
+            Thông tin trên trang không áp dụng cho các quốc gia như Mỹ, Canada,
+            Nhật Bản, New Zealand hay bất kỳ người nào ở bất kỳ quốc gia/khu vực
+            nào mà việc phân phối hoặc sử dụng trái với luật pháp hoặc đi ngược
+            với quy định của địa phương.
+          </p>
+          <p class="s-content">
+            Đối với một khu vực nhất định, dịch vụ thanh toán bằng thẻ được cung
+            cấp bởi Mitrade Services Ltd (một công ty đã đăng ký tại Anh và xứ
+            Wales theo số 11804044, có địa chỉ đăng ký tại 27 Old Gloucester
+            Street, London, WC1N 3AX, Vương quốc Anh). Mitrade Services Ltd là
+            công ty con thuộc sở hữu của Mitrade Group.
+          </p>
+          <p class="s-content">
+            Được bảo mật bởi SSL. © Bản quyền thuộc Mitrade. Mọi quyền được bảo
+            lưu. | Giấy phép kinh doanh đầu tư chứng khoán Số:1612446
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="theme/frontend/js/swiper-bundle.min.js"></script>
+    <script src="theme/frontend/js/jquery-3.7.0.min.js"></script>
+    <script src="theme/frontend/js/main.js"></script>
+  </body>
+</html>
