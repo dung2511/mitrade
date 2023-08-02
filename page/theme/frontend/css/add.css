@@ -135,7 +135,7 @@ body {
 .answer {
   display: none;
   overflow: hidden;
-  transition: height 0.3s ease;
+  transition: height 0.3s ease-in-out;
   height: 0;
 }
 .answer.active {
