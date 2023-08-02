@@ -181,3 +181,35 @@ body {
   width: 100%;
   gap: 8px;
 }
+.items-service .img-item-service img {
+  transition: all 0.3s;
+}
+.items-service .img-item-service:hover img {
+  transform: scale(1.1);
+}
+.sidebar ul li {
+  margin: 8px 0;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.sidebar ul li a {
+  padding: 12px;
+  display: flex;
+}
+.sidebar ul li:hover {
+  background-color: #ff671f;
+  color: #fff;
+  transform: scale(1.1);
+}
+table,
+th,
+td {
+  border: 1px solid #dee2e6;
+}
+th,td {
+  padding: 4px;
+  text-align: center;
+  word-wrap: break-word;
+}

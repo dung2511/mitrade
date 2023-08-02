@@ -61,22 +61,14 @@ var PROGRAM = (function () {
       });
     });
   };
-  var btnLikeComment = function () {
-    var itemComment = document.querySelectorAll(".items-comment");
-    itemComment.forEach(function (item) {
-      var btnLike = item.querySelector(".btn-like");
-      var numberLike = item.querySelector(".number-like");
-      btnLike.addEventListener("click", function () {
-        if (btnLike.innerHTML === "Like") {
-          btnLike.innerHTML = "Unlike";
-          numberLike.innerHTML = Number(numberLike.innerHTML) + 1;
-        } else {
-          btnLike.innerHTML = "Like";
-          numberLike.innerHTML = Number(numberLike.innerHTML) - 1;
-        }
-      });
-    });
-  };
+
+  var slideBannerHome = function () {
+    const sl_Banner_Home = document.querySelector(".sl-banner_home");
+    if(sl_Banner_Home.length === 0) return;
+    var swiperBannerHome = new Swiper(sl_Banner_Home, {
+      slidesPerView:1,
+    })
+  }
   var slideAchivements = function () {
     const sl_achievements_mains = document.querySelector(
       ".sl-achievements_mains"
@@ -94,6 +86,32 @@ var PROGRAM = (function () {
       },
     });
   };
+  var slideFeedback = function () {
+    const sl_Feedback_mains = document.querySelector(".sl-feedback_mains");
+    if (sl_Feedback_mains.length === 0) return;
+    var swiperFeedback = new Swiper(sl_Feedback_mains, {
+      slidesPerView: 2,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      spaceBetween: 16,
+    });
+  };
+  var slideNews = function () {
+    const sl_News_mains = document.querySelector(".sl-news_mains");
+    if (sl_News_mains.length === 0) return;
+    var swiperNews = new Swiper(sl_News_mains, {
+      slidesPerView: 2,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      spaceBetween: 16,
+    });
+  };
   var activeLanguage = function () {
     var hash = window.location.hash.substring(1);
     if (hash == "") {
@@ -105,11 +123,13 @@ var PROGRAM = (function () {
   return {
     _: function () {
       menuMobile();
+      slideBannerHome();
       showAns();
       slideAchivements();
       showReplyComment();
-      btnLikeComment();
       activeLanguage();
+      slideFeedback();
+      slideNews();
     },
   };
 })();
