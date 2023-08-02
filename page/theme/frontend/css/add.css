@@ -169,3 +169,8 @@ body {
 .section-comment .comment .avatar {
   flex: 1;
 }
+.header-language ul li.active {
+  background-color: #ff671f;
+  color: #fff;
+  border-radius: 4px;
+}
