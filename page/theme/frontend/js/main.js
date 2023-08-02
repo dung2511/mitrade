@@ -94,7 +94,14 @@ var PROGRAM = (function () {
       },
     });
   };
-  
+  var activeLanguage = function () {
+    var hash = window.location.hash.substring(1);
+    if (hash == "") {
+      document
+        .querySelector(".nav-language-desktop li:first-child")
+        .classList.add("active");
+    }
+  };
   return {
     _: function () {
       menuMobile();
@@ -102,6 +109,7 @@ var PROGRAM = (function () {
       slideAchivements();
       showReplyComment();
       btnLikeComment();
+      activeLanguage();
     },
   };
 })();
