@@ -22,16 +22,16 @@ var PROGRAM = (function () {
     itemQuestions.forEach(function (item) {
       var titleQuestion = item.querySelector(".question");
       var contentQuestion = item.querySelector(".answer");
-      var iconAngleQ = item.querySelector(".question i")
+      var iconAngleQ = item.querySelector(".question i");
       titleQuestion.addEventListener("click", function () {
         if (window.getComputedStyle(contentQuestion).display === "none") {
           contentQuestion.classList.add("active");
           var height = contentQuestion.scrollHeight;
           contentQuestion.style.height = height + "px";
-          iconAngleQ.classList.add("active")
+          iconAngleQ.classList.add("active");
         } else {
           contentQuestion.style.height = "0";
-          iconAngleQ.classList.remove("active")
+          iconAngleQ.classList.remove("active");
           contentQuestion.addEventListener(
             "transitionend",
             function () {
@@ -39,6 +39,24 @@ var PROGRAM = (function () {
             },
             { once: true }
           );
+        }
+      });
+    });
+  };
+  var showReplyComment = function () {
+    var itemComment = document.querySelectorAll(".items-comment");
+    itemComment.forEach(function (item) {
+      var btnReply = item.querySelector(".btn-showreply");
+      var btnCancelReply = item.querySelector(".btn-cancel-reply");
+      var replyComment = item.querySelector(".reply_comment");
+      btnReply.addEventListener("click", function () {
+        if (window.getComputedStyle(replyComment).display === "none") {
+          replyComment.classList.add("active");
+        }
+      });
+      btnCancelReply.addEventListener("click", function () {
+        if (window.getComputedStyle(replyComment).display === "block") {
+          replyComment.classList.remove("active");
         }
       });
     });
@@ -60,11 +78,13 @@ var PROGRAM = (function () {
       },
     });
   };
+
   return {
     _: function () {
       menuMobile();
       showAns();
       slideAchivements();
+      showReplyComment();
     },
   };
 })();

@@ -125,6 +125,13 @@ body {
 .section-question .item-question {
   transition: all 0.3s;
 }
+.reply_comment {
+  display: none;
+  transition: all .3s;
+}
+.reply_comment.active {
+  display: block;
+}
 .answer {
   display: none;
   overflow: hidden;
@@ -133,7 +140,6 @@ body {
 }
 .answer.active {
   display: block;
-  transition: height 0.3s ease;
 }
 .question i {
   transition: all 0.3s;
