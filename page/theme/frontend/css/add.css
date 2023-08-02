@@ -53,9 +53,11 @@
 .nav-language-desktop li {
   padding: 0.5rem 1rem;
   transition: all 0.3s;
+  border-radius: 4px;
 }
 .nav-language-desktop li:hover {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #ff671f;
+  color: #fff;
 }
 .nav-language-mobile ul li {
   padding: 0 40px;
@@ -173,4 +175,9 @@ body {
   background-color: #ff671f;
   color: #fff;
   border-radius: 4px;
+}
+.header-language ul {
+  display: flex;
+  width: 100%;
+  gap: 8px;
 }
