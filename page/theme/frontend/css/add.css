@@ -127,7 +127,7 @@ body {
 }
 .reply_comment {
   display: none;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .reply_comment.active {
   display: block;
@@ -159,4 +159,13 @@ body {
   cursor: text;
   font-size: 14px;
   padding: 0;
+}
+.section-service .items-service .title {
+  transition: all 0.3s;
+}
+.section-service .items-service .title:hover {
+  color: #dc8f00;
+}
+.section-comment .comment .avatar {
+  flex: 1;
 }
