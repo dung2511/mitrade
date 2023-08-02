@@ -61,6 +61,22 @@ var PROGRAM = (function () {
       });
     });
   };
+  var btnLikeComment = function () {
+    var itemComment = document.querySelectorAll(".items-comment");
+    itemComment.forEach(function (item) {
+      var btnLike = item.querySelector(".btn-like");
+      var numberLike = item.querySelector(".number-like");
+      btnLike.addEventListener("click", function () {
+        if (btnLike.innerHTML === "Like") {
+          btnLike.innerHTML = "Unlike";
+          numberLike.innerHTML = Number(numberLike.innerHTML) + 1;
+        } else {
+          btnLike.innerHTML = "Like";
+          numberLike.innerHTML = Number(numberLike.innerHTML) - 1;
+        }
+      });
+    });
+  };
   var slideAchivements = function () {
     const sl_achievements_mains = document.querySelector(
       ".sl-achievements_mains"
@@ -85,6 +101,7 @@ var PROGRAM = (function () {
       showAns();
       slideAchivements();
       showReplyComment();
+      btnLikeComment();
     },
   };
 })();
