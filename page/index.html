@@ -106,7 +106,9 @@
                       ></circle>
                     </g>
                   </g>
-                </svg></svg></a>
+                </svg>
+              </svg>
+            </a>
           </div>
           <div
             class="flex justify-end md:gap-10 items-center align-middle w-1/2 whitespace-nowrap"
@@ -124,6 +126,7 @@
             </div>
             <div class="mr-5 md:mr-0">
               <a
+                id="btn-register"
                 href="#"
                 class="h-10 block px-5 text-center bg-[#3682FF] border border-solid border-[#196ffc] text-[#ffffff] leading-10 rounded"
               >
@@ -181,7 +184,8 @@
                   class="w-full h-full block lg:hidden"
                 />
               </div>
-              <div class="wrap container 2xl:px-32 pt-8 md:py-20 overflow-hidden block lg:flex items-center h-auto px-4 mx-auto my-0 relative"
+              <div
+                class="wrap container 2xl:px-32 pt-8 md:py-20 overflow-hidden block lg:flex items-center h-auto px-4 mx-auto my-0 relative"
               >
                 <div
                   class="toCenter lg:w-1/2 lg:text-left text-center lg:relative z-10"
@@ -241,7 +245,8 @@
                   class="w-full h-full block lg:hidden"
                 />
               </div>
-              <div class="wrap container 2xl:px-32 pt-8 md:py-20 overflow-hidden block lg:flex items-center h-auto px-4 mx-auto my-0 relative"
+              <div
+                class="wrap container 2xl:px-32 pt-8 md:py-20 overflow-hidden block lg:flex items-center h-auto px-4 mx-auto my-0 relative"
               >
                 <div
                   class="toCenter lg:w-1/2 lg:text-left text-center lg:relative z-10"
@@ -1698,15 +1703,53 @@
         </div>
       </div>
     </footer>
-    <div class="modal hidden" id="register">
-      <div class="modal-body m-auto max-w-xl">
-        <div class="register-box">
-          <div class="box-close"></div>
+    <div
+      class="modal-register fixed top-1/2 left-1/2 -translate-x-1/2 w-full h-full -translate-y-1/2 z-20 bg-[#0000004d]"
+      id="modal-register"
+    >
+      <div class="modal-body m-auto h-full max-w-xl flex items-center">
+        <div class="register-box relative z-30 w-full p-8 bg-[#fff]">
+          <div class="text-right my-2 ">
+            <span class="box-close-modal cursor-pointer"><i class="fa-solid fa-x"></i></span>
+          </div>
           <div class="register-content">
-            <h3 class="text-center">Đăng ký</h3>
+            <h3 class="text-center mb-3">Bạn chưa có tài khoản</h3>
             <div class="form-mode">
-              <div class="signUp inline-block">Số Điện Thoại</div>
-              <div class="signUp inline-block">Email</div>
+              <form action="">
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="h-10 mb-4 pl-2.5 w-full border-[#ebebeb] border-[1px] border-solid"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="password"
+                    placeholder="Vui Lòng nhập mật khẩu"
+                    class="pl-2.5 mb-4 h-10 w-full border-[#ebebeb] border-[1px] border-solid"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="password"
+                    placeholder="Vui Lòng nhập lại mật khẩu"
+                    class="pl-2.5 mb-4 h-10 w-full border-[#ebebeb] border-[1px] border-solid"
+                  />
+                </div>
+                <button
+                  class="bg-[#3682ff] text-center w-full h-10 rounded text-[#fff]"
+                >
+                  Đăng ký
+                </button>
+              </form>
+              <div class="mt-10 text-center">
+                <p>
+                  Bạn đã có tài khoản ?<a href="#" class="text-[#3682ff]">
+                    Đăng nhập</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </div>

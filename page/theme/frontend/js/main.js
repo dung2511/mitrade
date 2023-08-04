@@ -61,14 +61,28 @@ var PROGRAM = (function () {
       });
     });
   };
-
+  var showModalRegister = function () {
+    const openModalRegister = document.getElementById("btn-register");
+    const closeModalRegister = document.querySelector(".box-close-modal");
+    const modalRegister = document.querySelector(".modal-register");
+    openModalRegister.addEventListener("click", function () {
+      if (window.getComputedStyle(modalRegister).display === "none") {
+        modalRegister.classList.add("active");
+      }
+    });
+    closeModalRegister.addEventListener("click", function () {
+      if (window.getComputedStyle(modalRegister).display === "block") {
+        modalRegister.classList.remove("active");
+      }
+    });
+  };
   var slideBannerHome = function () {
     const sl_Banner_Home = document.querySelector(".sl-banner_home");
-    if(sl_Banner_Home.length === 0) return;
+    if (sl_Banner_Home.length === 0) return;
     var swiperBannerHome = new Swiper(sl_Banner_Home, {
-      slidesPerView:1,
-    })
-  }
+      slidesPerView: 1,
+    });
+  };
   var slideAchivements = function () {
     const sl_achievements_mains = document.querySelector(
       ".sl-achievements_mains"
@@ -120,6 +134,7 @@ var PROGRAM = (function () {
         .classList.add("active");
     }
   };
+
   return {
     _: function () {
       menuMobile();
@@ -130,6 +145,7 @@ var PROGRAM = (function () {
       activeLanguage();
       slideFeedback();
       slideNews();
+      showModalRegister();
     },
   };
 })();

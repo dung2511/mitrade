@@ -201,18 +201,17 @@ body {
 .sidebar ul li:hover {
   background-color: #ff671f;
   color: #fff;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 table,
 th,
 td {
   border: 1px solid #dee2e6;
-  cursor:default;
+  cursor: default;
 }
 th,
 td {
   padding: 4px;
-  text-align: center;
   word-wrap: break-word;
 }
 .section-service .items-service {
@@ -223,9 +222,51 @@ td {
 .section-service .items-service:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.table th, .table td {
-  padding: 0.75rem;
+.table th,
+.table td {
+  padding: 0.5rem;
+  word-break: break-word;
 }
 .table tr {
+  transition: all 0.3s;
+}
+.table-result tr:hover {
+  background: #0047bb;
+  color: #ffffff;
+}
+input,select {
+  outline: none;
+}
+.modal-register {
+  display: none;
+}
+.modal-register.active {
+  display: block;
+}
+.btn-submit::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #268e5b;
   transition: all .3s;
+}
+.btn-submit:hover::after {
+ width: 100%;
+}
+.btn-submit {
+  transition: all .3s;
+}
+@media (max-width: 480px) {
+  .table-result th:nth-child(2) {
+    width: 33%;
+  }
+  .table-result th:nth-child(3) {
+    width: 22%;
+  }
+  .table-result {
+    font-size: 13px;
+  }
 }
