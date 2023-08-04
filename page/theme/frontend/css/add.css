@@ -234,7 +234,8 @@ td {
   background: #0047bb;
   color: #ffffff;
 }
-input,select {
+input,
+select {
   outline: none;
 }
 .modal-register {
@@ -251,13 +252,13 @@ input,select {
   width: 0;
   height: 100%;
   background-color: #268e5b;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .btn-submit:hover::after {
- width: 100%;
+  width: 100%;
 }
 .btn-submit {
-  transition: all .3s;
+  transition: all 0.3s;
 }
 @media (max-width: 480px) {
   .table-result th:nth-child(2) {
@@ -269,4 +270,8 @@ input,select {
   .table-result {
     font-size: 13px;
   }
+}
+header {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
