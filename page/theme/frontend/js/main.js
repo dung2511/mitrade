@@ -78,7 +78,7 @@ var PROGRAM = (function () {
   };
   var slideBannerHome = function () {
     const sl_Banner_Home = document.querySelector(".sl-banner_home");
-    if (sl_Banner_Home.length === 0) return;
+    if (sl_Banner_Home === "undefined") return;
     var swiperBannerHome = new Swiper(sl_Banner_Home, {
       slidesPerView: 1,
     });
@@ -87,7 +87,7 @@ var PROGRAM = (function () {
     const sl_achievements_mains = document.querySelector(
       ".sl-achievements_mains"
     );
-    if (sl_achievements_mains.length === 0) return;
+    if (sl_achievements_mains === "undefined") return;
     var swiperAchivements = new Swiper(sl_achievements_mains, {
       slidesPerView: 2,
       pagination: {
@@ -102,7 +102,7 @@ var PROGRAM = (function () {
   };
   var slideFeedback = function () {
     const sl_Feedback_mains = document.querySelector(".sl-feedback_mains");
-    if (sl_Feedback_mains.length === 0) return;
+    if (sl_Feedback_mains === "undefined") return;
     var swiperFeedback = new Swiper(sl_Feedback_mains, {
       slidesPerView: 2,
       loop: true,
@@ -115,7 +115,7 @@ var PROGRAM = (function () {
   };
   var slideNews = function () {
     const sl_News_mains = document.querySelector(".sl-news_mains");
-    if (sl_News_mains.length === 0) return;
+    if (sl_News_mains === "undefined") return;
     var swiperNews = new Swiper(sl_News_mains, {
       slidesPerView: 2,
       loop: true,
