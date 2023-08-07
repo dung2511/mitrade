@@ -65,16 +65,20 @@ var PROGRAM = (function () {
     const openModalRegister = document.getElementById("btn-register");
     const closeModalRegister = document.querySelector(".box-close-modal");
     const modalRegister = document.querySelector(".modal-register");
-    openModalRegister.addEventListener("click", function () {
-      if (window.getComputedStyle(modalRegister).display === "none") {
-        modalRegister.classList.add("active");
-      }
-    });
-    closeModalRegister.addEventListener("click", function () {
-      if (window.getComputedStyle(modalRegister).display === "block") {
-        modalRegister.classList.remove("active");
-      }
-    });
+    if (modalRegister != undefined) {
+      openModalRegister.addEventListener("click", function () {
+        if (window.getComputedStyle(modalRegister).display === "none") {
+          modalRegister.classList.add("active");
+        }
+      });
+      closeModalRegister.addEventListener("click", function () {
+        if (window.getComputedStyle(modalRegister).display === "block") {
+          modalRegister.classList.remove("active");
+        }
+      });
+    } else {
+      return;
+    }
   };
   var slideBannerHome = function () {
     const sl_Banner_Home = document.querySelector(".sl-banner_home");
